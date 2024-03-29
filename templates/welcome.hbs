@@ -1,0 +1,51 @@
+const WelcomeEmail = ({ user }) => {
+	return (
+		<div>
+			<table
+				width="100%"
+				border="0"
+				cellspacing="0"
+				cellpadding="0">
+				<tr>
+					<td align="center">
+						<table
+							width="600"
+							border="0"
+							cellspacing="0"
+							cellpadding="0">
+							<tr>
+								<td
+									align="center"
+									bgcolor="#f9f9f9"
+									style="padding: 40px;">
+									<h1>Welcome to Our STEM SKILL Factory</h1>
+									<p>Dear {user.name},</p>
+									<p>
+										Thank you for subscribing to our service! We are excited to
+										have you on board and we're confident that you'll find our
+										service to be valuable.
+									</p>
+									<p>
+										If you have any questions or need assistance, please don't
+										hesitate to reach out to our support team by emailing{' '}
+										<a href="mailto:info@stemskillfactory.com">
+											info@stemskillfactory.com
+										</a>{' '}
+									</p>
+									<p>
+										Thank you again for choosing our service. We look forward to
+										helping you achieve your goals.
+									</p>
+									<p>Best regards,</p>
+									<p>Sicelo Dube (The STEMLady)</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	);
+};
+
+export default WelcomeEmail;
