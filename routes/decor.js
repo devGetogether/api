@@ -1,31 +1,33 @@
 const express = require('express');
-const DecorProviders = require('../models/DecorProvider');
+const Decor = require('../models/Decor');
 const advancedResults = require('../middleware/advancedResults');
 const { protect, authorize } = require('../middleware/auth');
 
 const {
-	getAllDecorProviders,
-	getDecorProvider,
-	createNewDecorProvider,
-	updateDecorProvider,
-	deleteDecorProvider,
-} = require('../controllers/decorProviders');
+	getAllDecor,
+	getDecor,
+	createNewDecor,
+	updateDecor,
+	deleteDecor,
+} = require('../controllers/decor');
 
 const router = express.Router({ mergeParams: true });
 
 // Get all decor providers
-router.route('/').get(protect, authorize('admin'), advancedResults(DecorProviders, '-password'), getAllDecorProviders);
+router
+	.route('/')
+	.get(protect,  advancedResults(Decor, '-password'), getAllDecor);
 
 // Create new decor provider
-router.route('/register').post(createNewDecorProvider);
+router.route('/register').post(protect, createNewDecor);
 
 router
-	.route('/:phoneNumber')
+	.route('/:id')
 	// Get decor provider
-	.get(protect, getDecorProvider)
+	.get(getDecor)
 	// Update decor provider
-	.put(protect, updateDecorProvider)
+	.put(protect, updateDecor)
 	// Delete decor provider
-	.delete(protect, authorize('admin'), deleteDecorProvider);
+	.delete(protect, authorize('admin'), deleteDecor);
 
 module.exports = router;

@@ -1,41 +1,56 @@
 const mongoose = require('mongoose');
 
-const staffSchema = new mongoose.Schema({
-	userId: {
-		type: mongoose.Schema.Types.ObjectId,
-		ref: 'User',
-		required: true,
+const staffSchema = new mongoose.Schema(
+	{
+		userID: {
+			type: mongoose.Schema.Types.ObjectId,
+			ref: 'User',
+			required: true,
+		},
+		name: {
+			type: String,
+			required: true,
+		},
+		details: {
+			type: String,
+			// required: true,
+		},
+		location: {
+			type: String,
+			required: true,
+		},
+		phoneNumber: {
+			type: String,
+			required: true,
+		},
+		email: {
+			type: String,
+			required: true,
+		},
+		portfolio: {
+			type: String,
+			default: '',
+		},
+		servedAreas: {
+			type: [String],
+			default: [''],
+		},
+		services: {
+			type: [{ name: String, description: String, price: Number }],
+			// required: true,
+		},
+		rating: {
+			type: Number,
+			default: 0,
+		},
+		active: {
+			type: Boolean,
+			default: false,
+		},
+		images: [String],
 	},
-	name: {
-		type: String,
-		required: true,
-	},
-	age: {
-		type: Number,
-		required: true,
-	},
-	role: {
-		type: String,
-		required: true,
-	},
-	email: {
-		type: String,
-		required: true,
-		unique: true,
-	},
-	phoneNumber: {
-		type: String,
-		required: true,
-	},
-	address: {
-		type: String,
-		required: true,
-	},
-	createdAt: {
-		type: Date,
-		default: Date.now,
-	},
-});
+	{ timestamps: true }
+);
 
 const Staff = mongoose.model('Staff', staffSchema);
 

@@ -1,0 +1,192 @@
+[
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester"
+		],
+		"userID": "6651e99932028b88bc4da144",
+		"name": "Pro Video",
+		"details": "Professional videography services.",
+		"location": "Manchester",
+		"phoneNumber": "+447701234567",
+		"email": "provideo@example.com",
+		"services": [
+			{
+				"name": "4 Cameras",
+				"description": "Multi-camera coverage.",
+				"price": 300
+			},
+			{
+				"name": "Drone Footage",
+				"description": "Aerial video shots.",
+				"price": 500
+			},
+			{
+				"name": "Editing",
+				"description": "Professional video editing.",
+				"price": 200
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Cardiff",
+			"Belfast",
+			"Leicester",
+			"Southampton",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da147",
+		"name": "Epic Films",
+		"details": "Epic films for all occasions.",
+		"location": "Cardiff",
+		"phoneNumber": "+447702345678",
+		"email": "epicfilms@example.com",
+		"services": [
+			{
+				"name": "4 Cameras",
+				"description": "Multiple camera setup.",
+				"price": 250
+			},
+			{
+				"name": "Live Streaming",
+				"description": "Real-time event streaming.",
+				"price": 300
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Belfast",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Newcastle",
+			"Nottingham"
+		],
+		"userID": "6651e99932028b88bc4da14a",
+		"name": "Cinematic Videography",
+		"details": "Creating cinematic experiences.",
+		"location": "Edinburgh",
+		"phoneNumber": "+447703456789",
+		"email": "cinematic@example.com",
+		"services": [
+			{
+				"name": "4 Cameras",
+				"description": "High-definition camera setup.",
+				"price": 350
+			},
+			{
+				"name": "Post Production",
+				"description": "Comprehensive post-production services.",
+				"price": 400
+			},
+			{
+				"name": "Event Coverage",
+				"description": "Full event videography.",
+				"price": 600
+			},
+			{
+				"name": "Music Video",
+				"description": "Professional music video production.",
+				"price": 700
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Bristol",
+			"Leeds",
+			"Sheffield"
+		],
+		"userID": "6651e99932028b88bc4da14d",
+		"name": "Event Videography",
+		"details": "Capturing your events in high quality.",
+		"location": "Glasgow",
+		"phoneNumber": "+447704567890",
+		"email": "eventvideo@example.com",
+		"services": [
+			{
+				"name": "4 Cameras",
+				"description": "Four camera setup for comprehensive coverage.",
+				"price": 400
+			},
+			{
+				"name": "Highlight Reel",
+				"description": "Short highlight videos.",
+				"price": 150
+			},
+			{
+				"name": "Interviews",
+				"description": "Professional interview recording.",
+				"price": 250
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da148",
+		"name": "Creative Visions",
+		"details": "Creative videography services.",
+		"location": "Belfast",
+		"phoneNumber": "+447705678901",
+		"email": "creativevisions@example.com",
+		"services": [
+			{
+				"name": "4 Cameras",
+				"description": "Multi-angle camera setup.",
+				"price": 300
+			},
+			{
+				"name": "Short Films",
+				"description": "Creating short films.",
+				"price": 500
+			},
+			{
+				"name": "Documentary",
+				"description": "Documentary filming and production.",
+				"price": 800
+			},
+			{
+				"name": "Corporate Videos",
+				"description": "Professional corporate video production.",
+				"price": 600
+			},
+			{
+				"name": "Wedding Videos",
+				"description": "Beautifully crafted wedding videos.",
+				"price": 700
+			}
+		]
+	}
+]

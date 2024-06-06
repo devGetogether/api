@@ -5,13 +5,9 @@ const Review = require('../models/Review');
 // @desc    Get all reviews
 // @route   GET /api/reviews
 // @access  Public
-exports.getReviews = asyncHandler(async (req, res, next) => {
-	try {
-		const reviews = await Review.find();
-		res.status(200).json({ success: true, data: reviews });
-	} catch (err) {
-		next(err);
-	}
+exports.getAllReviews = asyncHandler(async (req, res, next) => {
+	console.log(res.advancedResults);
+	res.status(200).json(res.advancedResults);
 });
 
 // @desc    Get single review
@@ -23,7 +19,7 @@ exports.getReview = asyncHandler(async (req, res, next) => {
 		if (!review) {
 			return next(new errorResponse(`Review not found with id ${req.params.id}`, 404));
 		}
-		res.status(200).json({ success: true, data: review });
+		res.status(200).json({ success: true, data: review, message: 'Review found' });
 	} catch (err) {
 		next(err);
 	}
@@ -32,10 +28,10 @@ exports.getReview = asyncHandler(async (req, res, next) => {
 // @desc    Create review
 // @route   POST /api/reviews
 // @access  Private
-exports.createReview = asyncHandler(async (req, res, next) => {
+exports.createNewReview = asyncHandler(async (req, res, next) => {
 	try {
 		const review = await Review.create(req.body);
-		res.status(201).json({ success: true, data: review });
+		res.status(201).json({ success: true, data: review, message: 'Review created' });
 	} catch (err) {
 		next(err);
 	}
@@ -53,7 +49,7 @@ exports.updateReview = asyncHandler(async (req, res, next) => {
 		if (!review) {
 			return next(new errorResponse(`Review not found with id ${req.params.id}`, 404));
 		}
-		res.status(200).json({ success: true, data: review });
+		res.status(200).json({ success: true, data: review, message: 'Review updated' });
 	} catch (err) {
 		next(err);
 	}
@@ -68,7 +64,7 @@ exports.deleteReview = asyncHandler(async (req, res, next) => {
 		if (!review) {
 			return next(new errorResponse(`Review not found with id ${req.params.id}`, 404));
 		}
-		res.status(200).json({ success: true, data: {} });
+		res.status(200).json({ success: true, data: {}, message: 'Review deleted' });
 	} catch (err) {
 		next(err);
 	}

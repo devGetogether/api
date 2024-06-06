@@ -1,33 +1,38 @@
 const express = require('express');
-const MakeUpProviders = require('../models/MakeUpProvider');
+const MakeUpService = require('../models/MakeUp');
 const advancedResults = require('../middleware/advancedResults');
 const { protect, authorize } = require('../middleware/auth');
 
 const {
-	getAllMakeUpProviders,
-	getMakeUpProvider,
-	createNewMakeUpProvider,
-	updateMakeUpProvider,
-	deleteMakeUpProvider,
-} = require('../controllers/makeUpProviders');
+	getAllMakeUpServices,
+	getMakeUpService,
+	createNewMakeUpService,
+	updateMakeUpService,
+	deleteMakeUpService,
+} = require('../controllers/makeUp');
 
 const router = express.Router({ mergeParams: true });
 
 // Get all make-up providers
 router
 	.route('/')
-	.get(protect, authorize('admin'), advancedResults(MakeUpProviders, '-password'), getAllMakeUpProviders);
+	.get(
+		protect,
+	
+		advancedResults(MakeUpService, '-password'),
+		getAllMakeUpServices
+	);
 
 // Create new make-up provider
-router.route('/register').post(createNewMakeUpProvider);
+router.route('/register').post(protect, createNewMakeUpService);
 
 router
-	.route('/:phoneNumber')
+	.route('/:id')
 	// Get make-up provider
-	.get(protect, getMakeUpProvider)
+	.get(getMakeUpService)
 	// Update make-up provider
-	.put(protect, updateMakeUpProvider)
+	.put(protect, updateMakeUpService)
 	// Delete make-up provider
-	.delete(protect, authorize('admin'), deleteMakeUpProvider);
+	.delete(protect, authorize('admin'), deleteMakeUpService);
 
 module.exports = router;

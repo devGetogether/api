@@ -1,11 +1,12 @@
 const asyncHandler = require('../middleware/async');
 const errorResponse = require('../utils/errorResponse');
 const Transport = require('../models/Transport');
+const User = require('../models/User');
 
 // @desc    Get all transports
 // @route   GET /api/transports
 // @access  Public
-exports.getTransports = asyncHandler(async (req, res, next) => {
+exports.getAllTransports = asyncHandler(async (req, res, next) => {
 	try {
 		const transports = await Transport.find();
 		res.status(200).json({ success: true, data: transports });
@@ -21,9 +22,9 @@ exports.getTransport = asyncHandler(async (req, res, next) => {
 	try {
 		const transport = await Transport.findById(req.params.id);
 		if (!transport) {
-			return next(new errorResponse(`Transport not found with id ${req.params.id}`, 404));
+			return next(new errorResponse(`Transport service provider not found`, 404));
 		}
-		res.status(200).json({ success: true, data: transport });
+		res.status(200).json({ success: true, data: transport, message: 'Transport service provider found' });
 	} catch (err) {
 		next(err);
 	}
@@ -32,10 +33,30 @@ exports.getTransport = asyncHandler(async (req, res, next) => {
 // @desc    Create transport
 // @route   POST /api/transports
 // @access  Private
-exports.createTransport = asyncHandler(async (req, res, next) => {
+exports.createNewTransport = asyncHandler(async (req, res, next) => {
+	req.body.userID = req.user.id;
+
+	// check for published event planner
+	const publishedTransport = await Transport.findOne({ user: req.user.id });
+
+	// if there is a published event planner and the user is not an admin
+	if (publishedTransport) {
+		return res
+			.status(400)
+			.json({ success: false, message: 'User already has a Transport Service registered.' });
+	}
 	try {
 		const transport = await Transport.create(req.body);
-		res.status(201).json({ success: true, data: transport });
+
+		// add the transport role to the user roles array
+		const userRoles = [...req.user.role, 'transport'];
+
+		// update the user with the new role
+		await User.findByIdAndUpdate(req.user.id, { role: userRoles });
+
+		res
+			.status(201)
+			.json({ success: true, data: transport, message: 'Transport service created successfully' });
 	} catch (err) {
 		next(err);
 	}

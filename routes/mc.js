@@ -1,31 +1,25 @@
 const express = require('express');
-const Merchants = require('../models/Merchant');
+const MCs = require('../models/MC');
 const advancedResults = require('../middleware/advancedResults');
 const { protect, authorize } = require('../middleware/auth');
 
-const {
-	getAllMerchants,
-	getMerchant,
-	createNewMerchant,
-	updateMerchant,
-	deleteMerchant,
-} = require('../controllers/mc');
+const { getAllMCs, getMC, createNewMC, updateMC, deleteMC } = require('../controllers/mc');
 
 const router = express.Router({ mergeParams: true });
 
 // Get all merchants
-router.route('/').get(protect, authorize('admin'), advancedResults(Merchants, '-password'), getAllMerchants);
+router.route('/').get(protect,  advancedResults(MCs, '-password'), getAllMCs);
 
 // Create new merchant
-router.route('/register').post(createNewMerchant);
+router.route('/register').post(protect, createNewMC);
 
 router
-	.route('/:phoneNumber')
+	.route('/:id')
 	// Get merchant
-	.get(protect, getMerchant)
+	.get(getMC)
 	// Update merchant
-	.put(protect, updateMerchant)
+	.put(protect, updateMC)
 	// Delete merchant
-	.delete(protect, authorize('admin'), deleteMerchant);
+	.delete(protect, authorize('admin'), deleteMC);
 
 module.exports = router;

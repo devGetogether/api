@@ -1,0 +1,196 @@
+[
+	{
+		"servedAreas": ["London", "Birmingham", "Manchester", "Glasgow", "Liverpool", "Edinburgh"],
+		"userID": "6651e99932028b88bc4da145",
+		"name": "Secure Protectors",
+		"details": "We ensure the highest security standards.",
+		"location": "Manchester",
+		"phoneNumber": "+447710123456",
+		"email": "secureprotectors@example.com",
+		"services": [
+			{
+				"name": "3 guards",
+				"description": "9hr service",
+				"price": 200
+			},
+			{
+				"name": "Event Security",
+				"description": "Full event coverage",
+				"price": 500
+			}
+		]
+	},
+	{
+		"servedAreas": ["Bristol", "Leeds", "Sheffield", "Newcastle", "Nottingham"],
+		"userID": "6651e99932028b88bc4da147",
+		"name": "Guardian Angels",
+		"details": "Protecting your events with diligence.",
+		"location": "Leeds",
+		"phoneNumber": "+447711234567",
+		"email": "guardianangels@example.com",
+		"services": [
+			{
+				"name": "5 guards",
+				"description": "12hr service",
+				"price": 400
+			},
+			{
+				"name": "Night Patrol",
+				"description": "Overnight security",
+				"price": 300
+			},
+			{
+				"name": "VIP Protection",
+				"description": "Personal bodyguards",
+				"price": 700
+			}
+		]
+	},
+	{
+		"servedAreas": ["Cardiff", "Belfast", "Southampton", "Aberdeen", "Coventry", "Swansea"],
+		"userID": "6651e99932028b88bc4da149",
+		"name": "Event Bouncers",
+		"details": "Ensuring a safe and secure environment.",
+		"location": "Cardiff",
+		"phoneNumber": "+447712345678",
+		"email": "eventbouncers@example.com",
+		"services": [
+			{
+				"name": "Crowd Control",
+				"description": "Managing large gatherings",
+				"price": 250
+			},
+			{
+				"name": "Access Control",
+				"description": "Monitoring entry points",
+				"price": 150
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Edinburgh",
+			"Coventry",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da14a",
+		"name": "Top Security",
+		"details": "Top-tier security services for all events.",
+		"location": "Edinburgh",
+		"phoneNumber": "+447713456789",
+		"email": "topsecurity@example.com",
+		"services": [
+			{
+				"name": "24/7 Surveillance",
+				"description": "Around the clock security",
+				"price": 1000
+			},
+			{
+				"name": "Mobile Patrol",
+				"description": "Patrolling designated areas",
+				"price": 300
+			},
+			{
+				"name": "Emergency Response",
+				"description": "Quick response team",
+				"price": 500
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leicester",
+			"Belfast",
+			"Southampton",
+			"Swansea",
+			"Reading"
+		],
+		"userID": "6651e99932028b88bc4da14c",
+		"name": "Ultimate Security",
+		"details": "Providing ultimate security solutions.",
+		"location": "Liverpool",
+		"phoneNumber": "+447714567890",
+		"email": "ultimatesecurity@example.com",
+		"services": [
+			{
+				"name": "Event Security",
+				"description": "Professional security for events",
+				"price": 450
+			},
+			{
+				"name": "Venue Protection",
+				"description": "Securing venues",
+				"price": 350
+			},
+			{
+				"name": "Personal Security",
+				"description": "Bodyguard services",
+				"price": 600
+			},
+			{
+				"name": "Security Consultation",
+				"description": "Professional security advice",
+				"price": 200
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Manchester",
+			"Liverpool",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast"
+		],
+		"userID": "6651e99932028b88bc4da14d",
+		"name": "Prime Security Services",
+		"details": "Offering premium security services for all occasions.",
+		"location": "Nottingham",
+		"phoneNumber": "+447715678901",
+		"email": "primesecurity@example.com",
+		"services": [
+			{
+				"name": "Event Guards",
+				"description": "Professional guards for events",
+				"price": 500
+			},
+			{
+				"name": "Risk Assessment",
+				"description": "Comprehensive risk analysis",
+				"price": 300
+			},
+			{
+				"name": "Alarm Response",
+				"description": "Quick response to alarms",
+				"price": 250
+			},
+			{
+				"name": "Fire Watch",
+				"description": "Monitoring for fire hazards",
+				"price": 400
+			},
+			{
+				"name": "VIP Escorts",
+				"description": "Escort services for VIPs",
+				"price": 800
+			},
+			{
+				"name": "Crowd Management",
+				"description": "Managing large crowds",
+				"price": 350
+			}
+		]
+	}
+]

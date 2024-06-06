@@ -1,0 +1,214 @@
+[
+	{
+		"servedAreas": [
+			"London",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham"
+		],
+		"userID": "6651e99932028b88bc4da144",
+		"name": "Photo Studio A",
+		"details": "Professional event photography services.",
+		"location": "Manchester",
+		"phoneNumber": "+447711223344",
+		"email": "studioa@example.com",
+		"services": [
+			{
+				"name": "Wedding Shoot",
+				"description": "Comprehensive wedding photography package.",
+				"price": 100
+			},
+			{
+				"name": "Corporate Event",
+				"description": "Photography for corporate events.",
+				"price": 150
+			}
+		]
+	},
+	{
+		"servedAreas": ["Birmingham", "Southampton", "Leeds", "Sheffield", "Newcastle"],
+		"userID": "6651e99932028b88bc4da145",
+		"name": "Photographer B",
+		"details": "Capturing moments with precision and care.",
+		"location": "Leeds",
+		"phoneNumber": "+447722334455",
+		"email": "photographerb@example.com",
+		"services": [
+			{
+				"name": "Party Shoot",
+				"description": "10 photos per hour.",
+				"price": 50
+			},
+			{
+				"name": "Portrait Shoot",
+				"description": "Professional portrait sessions.",
+				"price": 70
+			},
+			{
+				"name": "Family Shoot",
+				"description": "Family photography sessions.",
+				"price": 80
+			},
+			{
+				"name": "Newborn Shoot",
+				"description": "Photography for newborns.",
+				"price": 90
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Liverpool",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Southampton",
+			"Coventry",
+			"Swansea"
+		],
+		"userID": "6651e99932028b88bc4da146",
+		"name": "Creative Clicks",
+		"details": "Creative photography for all occasions.",
+		"location": "Liverpool",
+		"phoneNumber": "+447733445566",
+		"email": "creativeclicks@example.com",
+		"services": [
+			{
+				"name": "Wedding Shoot",
+				"description": "Beautiful wedding photography.",
+				"price": 200
+			},
+			{
+				"name": "Engagement Shoot",
+				"description": "Capture your engagement moments.",
+				"price": 150
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da147",
+		"name": "Memory Makers",
+		"details": "Making memories one photo at a time.",
+		"location": "Cardiff",
+		"phoneNumber": "+447744556677",
+		"email": "memorymakers@example.com",
+		"services": [
+			{
+				"name": "Birthday Shoot",
+				"description": "Capture your birthday celebrations.",
+				"price": 120
+			},
+			{
+				"name": "Graduation Shoot",
+				"description": "Photography for graduation ceremonies.",
+				"price": 100
+			},
+			{
+				"name": "Maternity Shoot",
+				"description": "Capture the beauty of pregnancy.",
+				"price": 130
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da148",
+		"name": "Best Guy",
+		"details": "I take photos",
+		"location": "London",
+		"phoneNumber": "+447720299742",
+		"email": "kcncube@gmail.com",
+		"services": [
+			{
+				"name": "Party Shoot",
+				"description": "I take 10 photos",
+				"price": 20
+			},
+			{
+				"name": "Event Coverage",
+				"description": "Full event coverage with edited photos.",
+				"price": 200
+			},
+			{
+				"name": "Product Photography",
+				"description": "High-quality product images for e-commerce.",
+				"price": 100
+			},
+			{
+				"name": "Travel Shoot",
+				"description": "Photography during travel adventures.",
+				"price": 300
+			},
+			{
+				"name": "Fashion Shoot",
+				"description": "Professional fashion photography.",
+				"price": 250
+			},
+			{
+				"name": "Real Estate Shoot",
+				"description": "Photography for real estate listings.",
+				"price": 150
+			},
+			{
+				"name": "Sports Event Shoot",
+				"description": "Capture the action at sports events.",
+				"price": 220
+			},
+			{
+				"name": "Food Photography",
+				"description": "Delicious food images.",
+				"price": 180
+			},
+			{
+				"name": "Nature Shoot",
+				"description": "Beautiful nature photography.",
+				"price": 170
+			},
+			{
+				"name": "Pet Shoot",
+				"description": "Adorable pet photography.",
+				"price": 90
+			}
+		]
+	}
+]

@@ -1,0 +1,227 @@
+[
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol"
+		],
+		"userID": "6651e99932028b88bc4da144",
+		"name": "Petal Perfection",
+		"details": "We specialize in beautiful floral arrangements for any event.",
+		"location": "Edinburgh",
+		"phoneNumber": "+447701234567",
+		"email": "petalperfection@example.com",
+		"services": [
+			{
+				"name": "Tulips",
+				"description": "Our Tulips are great",
+				"price": 20
+			},
+			{
+				"name": "Roses",
+				"description": "Beautifully arranged roses",
+				"price": 25
+			},
+			{
+				"name": "Orchids",
+				"description": "Elegant orchid arrangements",
+				"price": 30
+			},
+			{
+				"name": "Lilies",
+				"description": "Lovely lily bouquets",
+				"price": 22
+			},
+			{
+				"name": "Sunflowers",
+				"description": "Bright and cheerful sunflowers",
+				"price": 18
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen"
+		],
+		"userID": "6651e99932028b88bc4da147",
+		"name": "Blossom Beauties",
+		"details": "Providing exquisite floral designs for all occasions.",
+		"location": "Leeds",
+		"phoneNumber": "+447702345678",
+		"email": "blossombeauties@example.com",
+		"services": [
+			{
+				"name": "Tulips",
+				"description": "Our Tulips are great",
+				"price": 20
+			},
+			{
+				"name": "Daisies",
+				"description": "Delightful daisy arrangements",
+				"price": 15
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Liverpool",
+			"Leicester",
+			"Cardiff",
+			"Southampton",
+			"Coventry",
+			"Swansea",
+			"Reading"
+		],
+		"userID": "6651e99932028b88bc4da14b",
+		"name": "Floral Dreams",
+		"details": "Turning floral dreams into reality.",
+		"location": "Manchester",
+		"phoneNumber": "+447703456789",
+		"email": "floraldreams@example.com",
+		"services": [
+			{
+				"name": "Tulips",
+				"description": "Our Tulips are great",
+				"price": 20
+			},
+			{
+				"name": "Peonies",
+				"description": "Lush peony bouquets",
+				"price": 28
+			},
+			{
+				"name": "Hydrangeas",
+				"description": "Full and beautiful hydrangeas",
+				"price": 35
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff"
+		],
+		"userID": "6651e99932028b88bc4da14d",
+		"name": "Blooming Marvelous",
+		"details": "We create marvelous floral arrangements.",
+		"location": "Liverpool",
+		"phoneNumber": "+447704567890",
+		"email": "bloomingmarvelous@example.com",
+		"services": [
+			{
+				"name": "Tulips",
+				"description": "Our Tulips are great",
+				"price": 20
+			},
+			{
+				"name": "Carnations",
+				"description": "Classic carnation bouquets",
+				"price": 18
+			},
+			{
+				"name": "Freesias",
+				"description": "Fragrant freesias",
+				"price": 25
+			},
+			{
+				"name": "Gerberas",
+				"description": "Vibrant gerbera arrangements",
+				"price": 22
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da14c",
+		"name": "Petals & Posies",
+		"details": "Specialists in creating floral masterpieces.",
+		"location": "London",
+		"phoneNumber": "+447705678901",
+		"email": "petalsandposies@example.com",
+		"services": [
+			{
+				"name": "Tulips",
+				"description": "Our Tulips are great",
+				"price": 20
+			},
+			{
+				"name": "Roses",
+				"description": "Exquisite rose arrangements",
+				"price": 25
+			},
+			{
+				"name": "Orchids",
+				"description": "Elegant orchids",
+				"price": 30
+			},
+			{
+				"name": "Lilies",
+				"description": "Beautiful lilies",
+				"price": 22
+			},
+			{
+				"name": "Sunflowers",
+				"description": "Bright sunflowers",
+				"price": 18
+			},
+			{
+				"name": "Peonies",
+				"description": "Lush peonies",
+				"price": 28
+			},
+			{
+				"name": "Hydrangeas",
+				"description": "Full hydrangeas",
+				"price": 35
+			},
+			{
+				"name": "Daisies",
+				"description": "Cheerful daisies",
+				"price": 15
+			}
+		]
+	}
+]

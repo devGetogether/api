@@ -1,0 +1,154 @@
+[
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol"
+		],
+		"userID": "6651e99932028b88bc4da146",
+		"name": "DJ Beats",
+		"details": "Top-notch DJ services for all events.",
+		"location": "Manchester",
+		"phoneNumber": "+447701234567",
+		"email": "djbeats@example.com",
+		"services": [
+			{
+				"name": "Sound Stage",
+				"description": "I am amazing"
+			},
+			{
+				"name": "Lighting",
+				"description": "Incredible light shows."
+			},
+			{
+				"name": "Mixing",
+				"description": "Seamless music mixing."
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent",
+			"Cardiff",
+			"London"
+		],
+		"userID": "6651e99932028b88bc4da149",
+		"name": "DJ Groove",
+		"details": "Professional DJ with a wide range of music.",
+		"location": "Belfast",
+		"phoneNumber": "+447702345678",
+		"email": "djgroove@example.com",
+		"services": [
+			{
+				"name": "Sound Stage",
+				"description": "I am amazing"
+			},
+			{
+				"name": "Karaoke",
+				"description": "Fun karaoke sessions."
+			}
+		]
+	},
+	{
+		"servedAreas": ["London", "Reading", "Leeds", "Sheffield", "Newcastle"],
+		"userID": "6651e99932028b88bc4da14a",
+		"name": "DJ Rhythm",
+		"details": "Energetic DJ with great vibes.",
+		"location": "Reading",
+		"phoneNumber": "+447703456789",
+		"email": "djrhythm@example.com",
+		"services": [
+			{
+				"name": "Sound Stage",
+				"description": "I am amazing"
+			},
+			{
+				"name": "Live DJ Sets",
+				"description": "Live performances for any event."
+			},
+			{
+				"name": "Custom Playlists",
+				"description": "Tailored music selections."
+			},
+			{
+				"name": "Dance Floors",
+				"description": "Setup of dance floors."
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Coventry",
+			"Swansea"
+		],
+		"userID": "6651e99932028b88bc4da14c",
+		"name": "DJ Energy",
+		"details": "Bringing energy to every party.",
+		"location": "Sheffield",
+		"phoneNumber": "+447704567890",
+		"email": "djenergy@example.com",
+		"services": [
+			{
+				"name": "Sound Stage",
+				"description": "I am amazing"
+			},
+			{
+				"name": "MC Services",
+				"description": "Professional MC for events."
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast"
+		],
+		"userID": "6651e99932028b88bc4da14d",
+		"name": "DJ Pulse",
+		"details": "Making every beat count.",
+		"location": "Glasgow",
+		"phoneNumber": "+447705678901",
+		"email": "djpulse@example.com",
+		"services": [
+			{
+				"name": "Sound Stage",
+				"description": "I am amazing"
+			},
+			{
+				"name": "Visual Effects",
+				"description": "Stunning visual effects."
+			},
+			{
+				"name": "PA Systems",
+				"description": "High-quality PA systems."
+			}
+		]
+	}
+]

@@ -1,4 +1,5 @@
 const path = require('path');
+const debug = require('debug')('sendEmail');
 var nodemailer = require('nodemailer');
 var hbs = require('nodemailer-express-handlebars');
 
@@ -11,6 +12,8 @@ const sendEmail = async (options) => {
 			pass: process.env.SENDGRID_API_KEY,
 		},
 	});
+
+	// debug(transporter);
 
 	const handlebarOptions = {
 		viewEngine: {
@@ -38,7 +41,6 @@ const sendEmail = async (options) => {
 			message: options.message,
 			code: options.code,
 			expiry: options.expiresIn,
-			doctor: options.doctor_name,
 		},
 	};
 

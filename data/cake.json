@@ -1,0 +1,127 @@
+[
+	{
+		"servedAreas": ["London", "Manchester", "Edinburgh"],
+		"rating": 0,
+		"active": false,
+		"userID": "6651e99932028b88bc4da145",
+		"name": "Delightful Cakes",
+		"details": "We specialize in delightful custom cakes for all occasions.",
+		"location": "London",
+		"phoneNumber": "+447700123456",
+		"email": "delightfulcakes@example.com",
+		"cakeTypes": [
+			{
+				"name": "Wedding Cake",
+				"description": "Beautiful wedding cake with intricate designs.",
+				"size": "20 inch, 3 Tier",
+				"price": 300
+			},
+			{
+				"name": "Birthday Cake",
+				"description": "Fun and colorful birthday cakes.",
+				"size": "15 inch, 2 Tier",
+				"price": 150
+			}
+		]
+	},
+	{
+		"servedAreas": ["Belfast", "Coventry", "Swansea", "Stoke-on-Trent"],
+		"rating": 0,
+		"active": false,
+		"userID": "6651e99932028b88bc4da14a",
+		"name": "Sweet Creations",
+		"details": "We create sweet and delicious cakes for all events.",
+		"location": "Belfast",
+		"phoneNumber": "+447701234567",
+		"email": "sweetcreations@example.com",
+		"cakeTypes": [
+			{
+				"name": "Wedding Cake",
+				"description": "Elegant and stylish wedding cakes.",
+				"size": "25 inch, 4 Tier",
+				"price": 400
+			},
+			{
+				"name": "Anniversary Cake",
+				"description": "Special cakes for special anniversaries.",
+				"size": "20 inch, 3 Tier",
+				"price": 250
+			}
+		]
+	},
+	{
+		"servedAreas": ["Aberdeen", "Reading", "Liverpool"],
+		"rating": 0,
+		"active": false,
+		"userID": "6651e99932028b88bc4da14d",
+		"name": "Cake Masters",
+		"details": "Masterful cake designs for all celebrations.",
+		"location": "Aberdeen",
+		"phoneNumber": "+447702345678",
+		"email": "cakemasters@example.com",
+		"cakeTypes": [
+			{
+				"name": "Wedding Cake",
+				"description": "Gorgeous wedding cakes for your special day.",
+				"size": "30 inch, 5 Tier",
+				"price": 500
+			}
+		]
+	},
+	{
+		"servedAreas": ["Birmingham", "Leicester", "Nottingham"],
+		"rating": 0,
+		"active": false,
+		"userID": "6651e99932028b88bc4da148",
+		"name": "Elegant Cakes",
+		"details": "Elegant and exquisite cakes made to order.",
+		"location": "Birmingham",
+		"phoneNumber": "+447703456789",
+		"email": "elegantcakes@example.com",
+		"cakeTypes": [
+			{
+				"name": "Wedding Cake",
+				"description": "Sophisticated wedding cakes with unique designs.",
+				"size": "20 inch, 3 Tier",
+				"price": 350
+			},
+			{
+				"name": "Graduation Cake",
+				"description": "Celebrate your graduation with a custom cake.",
+				"size": "15 inch, 2 Tier",
+				"price": 180
+			}
+		]
+	},
+	{
+		"servedAreas": ["Cardiff", "Bristol", "Leeds", "Sheffield"],
+		"rating": 0,
+		"active": false,
+		"userID": "6651e99932028b88bc4da149",
+		"name": "Fancy Cakes",
+		"details": "Fancy cakes for fancy occasions.",
+		"location": "Cardiff",
+		"phoneNumber": "+447704567890",
+		"email": "fancycakes@example.com",
+		"cakeTypes": [
+			{
+				"name": "Wedding Cake",
+				"description": "Luxurious wedding cakes for your big day.",
+				"size": "20 inch, 3 Tier",
+				"price": 400
+			},
+			{
+				"name": "Birthday Cake",
+				"description": "Fun and festive birthday cakes.",
+				"size": "10 inch, 2 Tier",
+				"price": 120
+			},
+			{
+				"name": "Baby Shower Cake",
+				"description": "Adorable cakes for baby showers.",
+				"size": "12 inch, 2 Tier",
+				"price": 150
+			}
+		]
+	}
+]

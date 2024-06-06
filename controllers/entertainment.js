@@ -1,11 +1,12 @@
 const asyncHandler = require('../middleware/async');
 const errorResponse = require('../utils/errorResponse');
 const Entertainment = require('../models/Entertainment');
+const User = require('../models/User');
 
 // @desc    Get all entertainments
 // @route   GET /api/entertainments
 // @access  Public
-exports.getEntertainments = asyncHandler(async (req, res, next) => {
+exports.getAllEntertainment = asyncHandler(async (req, res, next) => {
 	try {
 		const entertainments = await Entertainment.find();
 		res.status(200).json({ success: true, data: entertainments });
@@ -21,9 +22,9 @@ exports.getEntertainment = asyncHandler(async (req, res, next) => {
 	try {
 		const entertainment = await Entertainment.findById(req.params.id);
 		if (!entertainment) {
-			return next(new errorResponse(`Entertainment not found with id ${req.params.id}`, 404));
+			return next(new errorResponse(`Entertainment service provider not found`, 404));
 		}
-		res.status(200).json({ success: true, data: entertainment });
+		res.status(200).json({ success: true, data: entertainment, message: 'Entertainment service provider found' });
 	} catch (err) {
 		next(err);
 	}
@@ -32,10 +33,33 @@ exports.getEntertainment = asyncHandler(async (req, res, next) => {
 // @desc    Create entertainment
 // @route   POST /api/entertainments
 // @access  Private
-exports.createEntertainment = asyncHandler(async (req, res, next) => {
+exports.createNewEntertainment = asyncHandler(async (req, res, next) => {
+	// check User
+	req.body.userID = req.user.id;
+
+	// check if there is alread a entertainment service for the user
+	const existingEntertainment = await Entertainment.findOne({ userID: req.user.id });
+
+	if (existingEntertainment) {
+		return res
+			.status(400)
+			.json({ success: false, message: 'User already has a Entertainment Service registered.' });
+	}
+
 	try {
 		const entertainment = await Entertainment.create(req.body);
-		res.status(201).json({ success: true, data: entertainment });
+
+		// add the entertainment role to the user roles array
+		const userRoles = [...req.user.role, 'entertainment'];
+
+		// update the user with the new role
+		await User.findByIdAndUpdate(req.user.id, { role: userRoles });
+
+		res.status(201).json({
+			success: true,
+			data: entertainment,
+			message: 'Entertainment service created successfully',
+		});
 	} catch (err) {
 		next(err);
 	}

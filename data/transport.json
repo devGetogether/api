@@ -1,0 +1,258 @@
+[
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Coventry"
+		],
+		"userID": "6651e99932028b88bc4da144",
+		"name": "Quick Transport",
+		"details": "Reliable and quick transport services.",
+		"location": "Cardiff",
+		"phoneNumber": "+447701234567",
+		"email": "quicktransport@example.com",
+		"services": [
+			{
+				"name": "Shuttle",
+				"description": "Efficient shuttle services.",
+				"price": 250
+			},
+			{
+				"name": "Airport Transfer",
+				"description": "Comfortable transfers to and from the airport.",
+				"price": 150
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Glasgow",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da145",
+		"name": "City Movers",
+		"details": "Professional city transport services.",
+		"location": "Glasgow",
+		"phoneNumber": "+447702345678",
+		"email": "citymovers@example.com",
+		"services": [
+			{
+				"name": "Shuttle",
+				"description": "City shuttle services.",
+				"price": 200
+			},
+			{
+				"name": "Event Transport",
+				"description": "Transport services for events.",
+				"price": 300
+			},
+			{
+				"name": "Corporate Transport",
+				"description": "Transport services for corporate clients.",
+				"price": 400
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton"
+		],
+		"userID": "6651e99932028b88bc4da146",
+		"name": "Global Transport",
+		"details": "Global transport services for all your needs.",
+		"location": "Liverpool",
+		"phoneNumber": "+447703456789",
+		"email": "globaltransport@example.com",
+		"services": [
+			{
+				"name": "Shuttle",
+				"description": "Global shuttle services.",
+				"price": 350
+			},
+			{
+				"name": "Luxury Transport",
+				"description": "Luxury transport for special occasions.",
+				"price": 500
+			},
+			{
+				"name": "Group Transport",
+				"description": "Transport services for groups.",
+				"price": 450
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da147",
+		"name": "Premier Transport",
+		"details": "Premier transport services across the UK.",
+		"location": "Manchester",
+		"phoneNumber": "+447704567890",
+		"email": "premiertransport@example.com",
+		"services": [
+			{
+				"name": "Shuttle",
+				"description": "Premier shuttle services.",
+				"price": 300
+			},
+			{
+				"name": "Wedding Transport",
+				"description": "Elegant transport for weddings.",
+				"price": 600
+			},
+			{
+				"name": "VIP Transport",
+				"description": "VIP transport services.",
+				"price": 700
+			},
+			{
+				"name": "City Tours",
+				"description": "Guided city tours.",
+				"price": 400
+			},
+			{
+				"name": "Intercity Transport",
+				"description": "Reliable intercity transport.",
+				"price": 350
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da148",
+		"name": "Elite Transport",
+		"details": "Elite transport services for discerning clients.",
+		"location": "Leeds",
+		"phoneNumber": "+447705678901",
+		"email": "elitetransport@example.com",
+		"services": [
+			{
+				"name": "Shuttle",
+				"description": "Elite shuttle services.",
+				"price": 400
+			},
+			{
+				"name": "Luxury Car Hire",
+				"description": "Luxury cars for hire.",
+				"price": 700
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da149",
+		"name": "National Transport",
+		"details": "National transport services for all your needs.",
+		"location": "London",
+		"phoneNumber": "+447706789012",
+		"email": "nationaltransport@example.com",
+		"services": [
+			{
+				"name": "Shuttle",
+				"description": "Nationwide shuttle services.",
+				"price": 300
+			},
+			{
+				"name": "Event Transport",
+				"description": "Transport services for events nationwide.",
+				"price": 450
+			},
+			{
+				"name": "Corporate Transport",
+				"description": "Transport services for corporate events.",
+				"price": 600
+			},
+			{
+				"name": "Airport Transfer",
+				"description": "Comfortable transfers to and from airports nationwide.",
+				"price": 350
+			},
+			{
+				"name": "VIP Transport",
+				"description": "Exclusive VIP transport services.",
+				"price": 800
+			},
+			{
+				"name": "Wedding Transport",
+				"description": "Elegant transport for weddings.",
+				"price": 650
+			}
+		]
+	}
+]

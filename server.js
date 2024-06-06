@@ -33,29 +33,32 @@ dotenv.config({ path: './config/config.env' });
 connectDB();
 
 // Routes files
-const auth = require('./routes/auth');
-const users = require('./routes/user');
-const quotations = require('./routes/quotations');
-const institutions = require('./routes/institutions');
 const appointments = require('./routes/appointments');
-const notifications = require('./routes/notifications');
+const auth = require('./routes/auth');
+const av = require('./routes/av');
 const bar = require('./routes/bar');
+const cake = require('./routes/cake');
 const caterer = require('./routes/caterer');
 const decor = require('./routes/decor');
+const dj = require('./routes/dj');
 const entertainment = require('./routes/entertainment');
+const equipment = require('./routes/equipment');
+const event = require('./routes/event');
 const eventPlanner = require('./routes/eventPlanner');
 const florals = require('./routes/florals');
-const mc = require('./routes/mc');
 const makeup = require('./routes/makeUp');
+const mc = require('./routes/mc');
+const notifications = require('./routes/notifications');
+const payment = require('./routes/payments');
 const photographer = require('./routes/photographer');
+const quotations = require('./routes/quotations');
+const review = require('./routes/Reviews');
 const security = require('./routes/security');
+const staff = require('./routes/Staff');
+const transport = require('./routes/Transport');
+const users = require('./routes/user');
 const venue = require('./routes/venue');
 const videographer = require('./routes/videographer');
-const Cake = require('./routes/cake');
-const Staff = require('./routes/Staff');
-const Transport = require('./routes/Transport');
-const Payment = require('./routes/payment');
-const Review = require('./routes/Review');
 
 const { checkPayment } = require('./jobs/checkTimeRelatedIssues');
 
@@ -111,16 +114,37 @@ app.use(express.static(path.join(__dirname, 'public')));
 //checkPayment;
 
 //Mount routers
-app.use('/auth', auth);
-app.use('/users', users);
-app.use('/quotations', quotations);
-app.use('/institutions', institutions);
 app.use('/appointments', appointments);
+app.use('/auth', auth);
+app.use('/av', av);
+app.use('/bar', bar);
+app.use('/cake', cake);
+app.use('/catering', caterer);
+app.use('/decor', decor);
+app.use('/dj', dj);
+app.use('/entertainment', entertainment);
+app.use('/equipment', equipment);
+app.use('/event', event);
+app.use('/eventplanner', eventPlanner);
+app.use('/florals', florals);
+app.use('/makeup', makeup);
+app.use('/mc', mc);
 app.use('/notifications', notifications);
+app.use('/payment', payment);
+app.use('/photographer', photographer);
+app.use('/quotations', quotations);
+app.use('/review', review);
+app.use('/security', security);
+app.use('/staff', staff);
+app.use('/transport', transport);
+app.use('/users', users);
+app.use('/venue', venue);
+app.use('/videographer', videographer);
+
 app.get('/', (req, res) => {
 	res.send({
 		success: true,
-		message: 'Tetogether API',
+		message: 'Getogether API',
 	});
 });
 

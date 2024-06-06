@@ -1,0 +1,193 @@
+[
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen"
+		],
+		"userID": "6651e99932028b88bc4da146",
+		"name": "Elegant Venue",
+		"details": "A venue with elegant facilities and services.",
+		"location": "London",
+		"phoneNumber": "+447701234567",
+		"email": "elegantvenue@example.com",
+		"cpp": 15,
+		"services": [
+			{
+				"name": "Chair",
+				"description": "Elegant seating options."
+			},
+			{
+				"name": "Table",
+				"description": "Beautifully decorated tables."
+			},
+			{
+				"name": "Sound System",
+				"description": "High-quality sound system."
+			},
+			{
+				"name": "Lighting",
+				"description": "Ambient lighting for events."
+			},
+			{
+				"name": "Parking",
+				"description": "Ample parking space."
+			}
+		],
+		"maxCapacity": 500,
+		"minCapacity": 100
+	},
+	{
+		"servedAreas": [
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle"
+		],
+		"userID": "6651e99932028b88bc4da144",
+		"name": "Premier Venue",
+		"details": "Premier venue for weddings and corporate events.",
+		"location": "Manchester",
+		"phoneNumber": "+447702345678",
+		"email": "premiervenue@example.com",
+		"cpp": 20,
+		"services": [
+			{
+				"name": "Chair",
+				"description": "Comfortable and stylish chairs."
+			},
+			{
+				"name": "Catering",
+				"description": "In-house catering service."
+			},
+			{
+				"name": "Stage",
+				"description": "Spacious stage for performances."
+			},
+			{
+				"name": "Decoration",
+				"description": "Customizable decoration options."
+			}
+		],
+		"maxCapacity": 300,
+		"minCapacity": 150
+	},
+	{
+		"servedAreas": ["Cardiff", "Birmingham", "Manchester", "Leicester", "Aberdeen"],
+		"userID": "6651e99932028b88bc4da14a",
+		"name": "Exclusive Venue",
+		"details": "Exclusive venue for upscale events.",
+		"location": "Cardiff",
+		"phoneNumber": "+447703456789",
+		"email": "exclusivevenue@example.com",
+		"cpp": 30,
+		"services": [
+			{
+				"name": "Chair",
+				"description": "Luxurious chairs."
+			},
+			{
+				"name": "Valet Parking",
+				"description": "Valet parking service."
+			},
+			{
+				"name": "Security",
+				"description": "Professional security services."
+			}
+		],
+		"maxCapacity": 250,
+		"minCapacity": 100
+	},
+	{
+		"servedAreas": [
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Coventry",
+			"Swansea",
+			"Reading"
+		],
+		"userID": "6651e99932028b88bc4da14c",
+		"name": "Grand Venue",
+		"details": "Grand venue for large-scale events.",
+		"location": "Edinburgh",
+		"phoneNumber": "+447704567890",
+		"email": "grandvenue@example.com",
+		"cpp": 25,
+		"services": [
+			{
+				"name": "Chair",
+				"description": "Comfortable seating arrangements."
+			},
+			{
+				"name": "AV Equipment",
+				"description": "Advanced audiovisual equipment."
+			},
+			{
+				"name": "Dance Floor",
+				"description": "Spacious dance floor."
+			},
+			{
+				"name": "Bar",
+				"description": "Fully stocked bar."
+			}
+		],
+		"maxCapacity": 400,
+		"minCapacity": 200
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Bristol",
+			"Leeds",
+			"Nottingham",
+			"Southampton",
+			"Aberdeen",
+			"Coventry"
+		],
+		"userID": "6651e99932028b88bc4da14d",
+		"name": "Classic Venue",
+		"details": "Classic venue with timeless elegance.",
+		"location": "Southampton",
+		"phoneNumber": "+447705678901",
+		"email": "classicvenue@example.com",
+		"cpp": 10,
+		"services": [
+			{
+				"name": "Chair",
+				"description": "Classic chairs."
+			},
+			{
+				"name": "Table",
+				"description": "Elegant tables."
+			},
+			{
+				"name": "Lighting",
+				"description": "Classic lighting."
+			}
+		],
+		"maxCapacity": 200,
+		"minCapacity": 100
+	}
+]

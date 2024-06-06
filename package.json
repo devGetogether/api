@@ -11,7 +11,7 @@
 	"author": "KAEYCIE",
 	"license": "MIT",
 	"dependencies": {
-		"@sendgrid/mail": "^8.1.1",
+		"@sendgrid/mail": "^8.1.3",
 		"bcryptjs": "^2.4.3",
 		"colors": "^1.4.0",
 		"cookie-parser": "^1.4.5",

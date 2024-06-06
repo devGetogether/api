@@ -1,0 +1,128 @@
+[
+	{
+		"servedAreas": ["London", "Manchester", "Edinburgh", "Reading"],
+		"userID": "6651e99932028b88bc4da145",
+		"name": "Gourmet Catering",
+		"details": "We provide gourmet catering services for all events.",
+		"location": "London",
+		"phoneNumber": "+447700123456",
+		"email": "gourmetcatering@example.com",
+		"cpp": 25,
+		"services": [
+			{
+				"name": "Buffet Service",
+				"description": "Self service with a variety of dishes."
+			},
+			{
+				"name": "Plated Service",
+				"description": "Individual plates served to each guest."
+			}
+		],
+		"maxCapacity": 500,
+		"minCapacity": 50
+	},
+	{
+		"servedAreas": ["Birmingham", "Liverpool", "Glasgow"],
+		"userID": "6651e99932028b88bc4da148",
+		"name": "Elegant Eats",
+		"details": "Elegant catering for weddings and corporate events.",
+		"location": "Birmingham",
+		"phoneNumber": "+447701234567",
+		"email": "eleganteats@example.com",
+		"cpp": 30,
+		"services": [
+			{
+				"name": "Buffet Service",
+				"description": "Wide variety of buffet options."
+			},
+			{
+				"name": "Canapés",
+				"description": "Exquisite bite-sized appetizers."
+			},
+			{
+				"name": "Bar Service",
+				"description": "Professional bar service for all events."
+			}
+		],
+		"maxCapacity": 400,
+		"minCapacity": 80
+	},
+	{
+		"servedAreas": ["Cardiff", "Swansea", "Newcastle"],
+		"userID": "6651e99932028b88bc4da14b",
+		"name": "Festive Foods",
+		"details": "We make every event festive with our delicious food.",
+		"location": "Cardiff",
+		"phoneNumber": "+447702345678",
+		"email": "festivefoods@example.com",
+		"cpp": 15,
+		"services": [
+			{
+				"name": "Buffet Service",
+				"description": "Variety of dishes for self-service."
+			},
+			{
+				"name": "Dessert Table",
+				"description": "Assortment of desserts and sweets."
+			}
+		],
+		"maxCapacity": 350,
+		"minCapacity": 70
+	},
+	{
+		"servedAreas": ["Belfast", "Aberdeen", "Leeds"],
+		"userID": "6651e99932028b88bc4da146",
+		"name": "Premier Catering",
+		"details": "Premier catering services for high-end events.",
+		"location": "Belfast",
+		"phoneNumber": "+447703456789",
+		"email": "premiercatering@example.com",
+		"cpp": 35,
+		"services": [
+			{
+				"name": "Buffet Service",
+				"description": "Luxurious buffet with gourmet options."
+			},
+			{
+				"name": "Chef's Table",
+				"description": "Exclusive chef-prepared meals."
+			},
+			{
+				"name": "Cocktail Service",
+				"description": "Signature cocktails and drinks."
+			},
+			{
+				"name": "Live Stations",
+				"description": "Interactive live cooking stations."
+			}
+		],
+		"maxCapacity": 600,
+		"minCapacity": 100
+	},
+	{
+		"servedAreas": ["Nottingham", "Sheffield", "Leicester", "Bristol"],
+		"userID": "6651e99932028b88bc4da14d",
+		"name": "Delicious Delights",
+		"details": "Delicious catering for all types of events.",
+		"location": "Nottingham",
+		"phoneNumber": "+447704567890",
+		"email": "deliciousdelights@example.com",
+		"cpp": 20,
+		"services": [
+			{
+				"name": "Buffet Service",
+				"description": "Extensive buffet options for all tastes."
+			},
+			{
+				"name": "Family Style Service",
+				"description": "Dishes served in large platters to share."
+			},
+			{
+				"name": "Beverage Service",
+				"description": "Non-alcoholic and alcoholic beverages."
+			}
+		],
+		"maxCapacity": 450,
+		"minCapacity": 90
+	}
+]

@@ -1,5 +1,5 @@
 const express = require('express');
-const Florals = require('../models/Floral');
+const Florals = require('../models/Florals');
 const advancedResults = require('../middleware/advancedResults');
 const { protect, authorize } = require('../middleware/auth');
 
@@ -8,15 +8,15 @@ const { getAllFlorals, getFloral, createNewFloral, updateFloral, deleteFloral } 
 const router = express.Router({ mergeParams: true });
 
 // Get all florals
-router.route('/').get(protect, authorize('admin'), advancedResults(Florals, '-password'), getAllFlorals);
+router.route('/').get(protect,  advancedResults(Florals, '-password'), getAllFlorals);
 
 // Create new floral
-router.route('/register').post(createNewFloral);
+router.route('/register').post(protect, createNewFloral);
 
 router
 	.route('/:phoneNumber')
 	// Get floral
-	.get(protect, getFloral)
+	.get(getFloral)
 	// Update floral
 	.put(protect, updateFloral)
 	// Delete floral

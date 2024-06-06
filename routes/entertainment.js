@@ -1,33 +1,38 @@
 const express = require('express');
-const EntertainmentProviders = require('../models/EntertainmentProvider');
+const Entertainment = require('../models/Entertainment');
 const advancedResults = require('../middleware/advancedResults');
 const { protect, authorize } = require('../middleware/auth');
 
 const {
-	getAllEntertainmentProviders,
-	getEntertainmentProvider,
-	createNewEntertainmentProvider,
-	updateEntertainmentProvider,
-	deleteEntertainmentProvider,
-} = require('../controllers/entertainmentProviders');
+	getAllEntertainment,
+	getEntertainment,
+	createNewEntertainment,
+	updateEntertainment,
+	deleteEntertainment,
+} = require('../controllers/entertainment');
 
 const router = express.Router({ mergeParams: true });
 
 // Get all entertainment providers
 router
 	.route('/')
-	.get(protect, authorize('admin'), advancedResults(EntertainmentProviders, '-password'), getAllEntertainmentProviders);
+	.get(
+		protect,
+
+		advancedResults(Entertainment, '-password'),
+		getAllEntertainment
+	);
 
 // Create new entertainment provider
-router.route('/register').post(createNewEntertainmentProvider);
+router.route('/register').post(protect, createNewEntertainment);
 
 router
-	.route('/:phoneNumber')
+	.route('/:id')
 	// Get entertainment provider
-	.get(protect, getEntertainmentProvider)
+	.get(getEntertainment)
 	// Update entertainment provider
-	.put(protect, updateEntertainmentProvider)
+	.put(protect, updateEntertainment)
 	// Delete entertainment provider
-	.delete(protect, authorize('admin'), deleteEntertainmentProvider);
+	.delete(protect, authorize('admin'), deleteEntertainment);
 
 module.exports = router;

@@ -1,32 +1,68 @@
 const mongoose = require('mongoose');
 
-const catererSchema = new mongoose.Schema({
-	userId: {
-		type: mongoose.Schema.Types.ObjectId,
-		ref: 'User',
-		required: true,
+const catererSchema = new mongoose.Schema(
+	{
+		userID: {
+			type: mongoose.Schema.Types.ObjectId,
+			ref: 'User',
+			required: true,
+		},
+		name: {
+			type: String,
+			required: true,
+		},
+		details: {
+			type: String,
+			// required: true,
+		},
+		location: {
+			type: String,
+			required: true,
+		},
+		phoneNumber: {
+			type: String,
+			required: true,
+		},
+		email: {
+			type: String,
+			required: true,
+		},
+		portfolio: {
+			type: String,
+			default: '',
+		},
+		servedAreas: {
+			type: [String],
+			default: [''],
+		},
+		cpp: {
+			type: Number,
+			// required: true,
+		},
+		services: {
+			type: [{ name: String, description: String }],
+			// required: true,
+		},
+		maxCapacity: {
+			type: Number,
+			// required: true,
+		},
+		minCapacity: {
+			type: Number,
+			// required: true,
+		},
+		rating: {
+			type: Number,
+			default: 0,
+		},
+		active: {
+			type: Boolean,
+			default: false,
+		},
+		images: [String],
 	},
-	name: {
-		type: String,
-		required: true,
-	},
-	description: {
-		type: String,
-		required: true,
-	},
-	price: {
-		type: Number,
-		required: true,
-	},
-	availability: {
-		type: Boolean,
-		default: true,
-	},
-	createdAt: {
-		type: Date,
-		default: Date.now,
-	},
-});
+	{ timestamps: true }
+);
 
 const Caterer = mongoose.model('Caterer', catererSchema);
 

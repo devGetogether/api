@@ -9,20 +9,27 @@ const {
 	createNewPhotographer,
 	updatePhotographer,
 	deletePhotographer,
-} = require('../controllers/photographers');
+} = require('../controllers/photographer');
 
 const router = express.Router({ mergeParams: true });
 
 // Get all photographers
-router.route('/').get(protect, authorize('admin'), advancedResults(Photographers, '-password'), getAllPhotographers);
+router
+	.route('/')
+	.get(
+		protect,
+		
+		advancedResults(Photographers, '-password'),
+		getAllPhotographers
+	);
 
 // Create new photographer
-router.route('/register').post(createNewPhotographer);
+router.route('/register').post(protect, createNewPhotographer);
 
 router
-	.route('/:phoneNumber')
+	.route('/:id')
 	// Get photographer
-	.get(protect, getPhotographer)
+	.get(getPhotographer)
 	// Update photographer
 	.put(protect, updatePhotographer)
 	// Delete photographer

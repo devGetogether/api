@@ -1,6 +1,4 @@
 const Quotations = require('../models/Quotation');
-const Prescriptions = require('../models/Prescriptions');
-const Pharmacies = require('../models/Pharmacies');
 const ErrorResponse = require('../utils/errorResponse');
 const asyncHandler = require('../middleware/async');
 

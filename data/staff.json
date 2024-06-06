@@ -1,0 +1,179 @@
+[
+	{
+		"servedAreas": [
+			"London",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds"
+		],
+		"userID": "6651e99932028b88bc4da144",
+		"name": "Event Staff Solutions",
+		"details": "Providing professional event staffing solutions.",
+		"location": "Manchester",
+		"phoneNumber": "+447701234567",
+		"email": "eventstaff@example.com",
+		"services": [
+			{
+				"name": "Waiters",
+				"description": "Professional waiters for events.",
+				"price": 200
+			},
+			{
+				"name": "Bartenders",
+				"description": "Experienced bartenders.",
+				"price": 250
+			}
+		]
+	},
+	{
+		"servedAreas": ["Birmingham", "Leicester", "Cardiff", "Belfast", "Southampton"],
+		"userID": "6651e99932028b88bc4da145",
+		"name": "Top Staff",
+		"details": "Top-notch staffing for all your events.",
+		"location": "Birmingham",
+		"phoneNumber": "+447702345678",
+		"email": "topstaff@example.com",
+		"services": [
+			{
+				"name": "Security Personnel",
+				"description": "Trained security staff.",
+				"price": 300
+			},
+			{
+				"name": "Event Coordinators",
+				"description": "Expert event coordinators.",
+				"price": 400
+			},
+			{
+				"name": "Chefs",
+				"description": "Professional chefs.",
+				"price": 500
+			},
+			{
+				"name": "Ushers",
+				"description": "Friendly ushers for events.",
+				"price": 150
+			}
+		]
+	},
+	{
+		"servedAreas": ["Newcastle", "Nottingham", "Leeds", "Sheffield", "Reading"],
+		"userID": "6651e99932028b88bc4da147",
+		"name": "Elite Staffing",
+		"details": "Elite staffing services for elite events.",
+		"location": "Leeds",
+		"phoneNumber": "+447703456789",
+		"email": "elitestaff@example.com",
+		"services": [
+			{
+				"name": "Hostesses",
+				"description": "Elegant hostesses for events.",
+				"price": 250
+			},
+			{
+				"name": "Catering Staff",
+				"description": "Professional catering staff.",
+				"price": 200
+			},
+			{
+				"name": "Stage Hands",
+				"description": "Experienced stage hands.",
+				"price": 150
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester"
+		],
+		"userID": "6651e99932028b88bc4da14a",
+		"name": "Staff Experts",
+		"details": "Experts in providing staffing solutions.",
+		"location": "Edinburgh",
+		"phoneNumber": "+447704567890",
+		"email": "staffexperts@example.com",
+		"services": [
+			{
+				"name": "Promotional Staff",
+				"description": "Promotional staff for marketing events.",
+				"price": 220
+			},
+			{
+				"name": "Logistics Staff",
+				"description": "Efficient logistics staff.",
+				"price": 300
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da14d",
+		"name": "Ultimate Staffing",
+		"details": "Providing ultimate staffing solutions for your events.",
+		"location": "London",
+		"phoneNumber": "+447705678901",
+		"email": "ultimatestaffing@example.com",
+		"services": [
+			{
+				"name": "Setup Crew",
+				"description": "Crew for event setup and teardown.",
+				"price": 250
+			},
+			{
+				"name": "Cleanup Crew",
+				"description": "Professional cleanup crew.",
+				"price": 200
+			},
+			{
+				"name": "Event Managers",
+				"description": "Experienced event managers.",
+				"price": 400
+			},
+			{
+				"name": "Sound Technicians",
+				"description": "Skilled sound technicians.",
+				"price": 300
+			},
+			{
+				"name": "Lighting Technicians",
+				"description": "Professional lighting technicians.",
+				"price": 350
+			},
+			{
+				"name": "Decoration Staff",
+				"description": "Creative decoration staff.",
+				"price": 280
+			}
+		]
+	}
+]

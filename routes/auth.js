@@ -8,6 +8,7 @@ const {
 	activateUser,
 	requestVerification,
 	verifyContacts,
+	getMe
 } = require('../controllers/auth');
 
 const router = express.Router();
@@ -22,11 +23,12 @@ router.put('/update/:id', protect, updatePassword);
 // Authorize user
 router.route('/activate/:id').put(protect, authorize('admin'), activateUser);
 // request verification of user contacts
-router
-	.route('/requestverification/:id/:type')
-	.get(protect, requestVerification);
+router.route('/requestverification/:id/:type').get(protect, requestVerification);
 
 // verify user contacts
-router.route('/verifycontact/:id/:type').post(protect, verifyContacts);
+router.route('/verify/:id/:type').post(protect, verifyContacts);
+
+// get signed in user
+router.route('/me').get(protect, getMe);
 
 module.exports = router;

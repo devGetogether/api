@@ -3,12 +3,26 @@ const Reviews = require('../models/Review');
 const advancedResults = require('../middleware/advancedResults');
 const { protect, authorize } = require('../middleware/auth');
 
-const { getAllReviews, getReview, createNewReview, updateReview, deleteReview } = require('../controllers/reviews');
+const {
+	getAllReviews,
+	getReview,
+	createNewReview,
+	updateReview,
+	deleteReview,
+} = require('../controllers/reviews');
 
 const router = express.Router({ mergeParams: true });
 
 // Get all reviews
-router.route('/').get(protect, authorize('admin'), advancedResults(Reviews), getAllReviews);
+router.route('/').get(
+	advancedResults(Reviews, [
+		{
+			path: 'userId',
+			select: 'firstName lastName',
+		},
+	]),
+	getAllReviews
+);
 
 // Create new review
 router.route('/').post(protect, createNewReview);

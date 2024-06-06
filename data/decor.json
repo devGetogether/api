@@ -1,0 +1,161 @@
+[
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Cardiff"
+		],
+		"userID": "6651e99932028b88bc4da144",
+		"name": "Elegant Decor",
+		"details": "Providing elegant decor solutions for your events.",
+		"location": "Bristol",
+		"phoneNumber": "+447701234567",
+		"email": "elegantdecor@example.com",
+		"cpp": 30,
+		"services": [
+			{
+				"name": "Chairs",
+				"description": "Variety of elegant chairs."
+			},
+			{
+				"name": "Tables",
+				"description": "Decorative tables for all occasions."
+			}
+		],
+		"maxCapacity": 100,
+		"minCapacity": 20
+	},
+	{
+		"servedAreas": ["Glasgow", "Leeds", "Sheffield", "Newcastle", "Nottingham"],
+		"userID": "6651e99932028b88bc4da147",
+		"name": "Event Decor",
+		"details": "Specializing in event decor for weddings and parties.",
+		"location": "Glasgow",
+		"phoneNumber": "+447702345678",
+		"email": "eventdecor@example.com",
+		"cpp": 25,
+		"services": [
+			{
+				"name": "Chairs",
+				"description": "High-quality chairs for rent."
+			}
+		],
+		"maxCapacity": 50,
+		"minCapacity": 10
+	},
+	{
+		"servedAreas": [
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent",
+			"Cardiff",
+			"London"
+		],
+		"userID": "6651e99932028b88bc4da14b",
+		"name": "Premier Decor",
+		"details": "Top-notch decor services for premier events.",
+		"location": "Cardiff",
+		"phoneNumber": "+447703456789",
+		"email": "premierdecor@example.com",
+		"cpp": 35,
+		"services": [
+			{
+				"name": "Chairs",
+				"description": "Luxury chairs."
+			},
+			{
+				"name": "Lighting",
+				"description": "Ambient lighting setups."
+			},
+			{
+				"name": "Drapes",
+				"description": "Beautiful drapes for venues."
+			}
+		],
+		"maxCapacity": 150,
+		"minCapacity": 30
+	},
+	{
+		"servedAreas": [
+			"Birmingham",
+			"Manchester",
+			"Leicester",
+			"Southampton",
+			"Swansea",
+			"Aberdeen",
+			"Coventry"
+		],
+		"userID": "6651e99932028b88bc4da148",
+		"name": "Creative Decor",
+		"details": "Creative decor solutions for all types of events.",
+		"location": "Manchester",
+		"phoneNumber": "+447704567890",
+		"email": "creativedecor@example.com",
+		"cpp": 20,
+		"services": [
+			{
+				"name": "Chairs",
+				"description": "Comfortable and stylish chairs."
+			},
+			{
+				"name": "Stage Decoration",
+				"description": "Beautiful stage decorations."
+			}
+		],
+		"maxCapacity": 70,
+		"minCapacity": 15
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Manchester",
+			"Bristol",
+			"Leeds",
+			"Nottingham",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Coventry",
+			"Swansea"
+		],
+		"userID": "6651e99932028b88bc4da14d",
+		"name": "Festive Decor",
+		"details": "Festive decor for holidays and special events.",
+		"location": "London",
+		"phoneNumber": "+447705678901",
+		"email": "festivedecor@example.com",
+		"cpp": 40,
+		"services": [
+			{
+				"name": "Chairs",
+				"description": "Variety of festive chairs."
+			},
+			{
+				"name": "Tables",
+				"description": "Festive tables."
+			},
+			{
+				"name": "Centerpieces",
+				"description": "Beautiful centerpieces for tables."
+			},
+			{
+				"name": "Outdoor Decor",
+				"description": "Decorations for outdoor events."
+			}
+		],
+		"maxCapacity": 200,
+		"minCapacity": 50
+	}
+]

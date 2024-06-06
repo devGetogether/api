@@ -6,9 +6,8 @@ const {
 	updateUser,
 	deleteUser,
 	uploadUserPhoto,
-	addUserDoctors,
-	removeUserDoctors,
 	getMe,
+	verifyEmail,
 } = require('../controllers/users');
 
 const Users = require('../models/User');
@@ -21,23 +20,12 @@ const { protect, authorize } = require('../middleware/auth');
 // Get all users
 router.route('/').get(
 	// protect,
-	advancedResults(
-		Users,
-		{
-			path: 'doctors',
-			select: 'specializations details',
-			populate: {
-				path: 'details',
-				select: 'name address email phoneNumber',
-			},
-		},
-		'-password'
-	),
+	advancedResults(Users, '-password'),
 	getAllUsers
 );
 
 // Create new user
-router.route('/register').post(createNewUser);
+router.route('/create').post(createNewUser);
 
 // Get all of the user's information
 router.route('/getme').get(protect, getMe);
@@ -61,10 +49,7 @@ router.route('/:id/photo').put(
 	uploadUserPhoto
 );
 
-// Add User Doctor
-router.route('/:id/privacy/:doctor').post(protect, addUserDoctors);
-
-// Remove User Doctor
-router.route('/:id/privacy/:doctor').get(protect, removeUserDoctors);
+// Verify email
+router.route('/verifyemail/').post(verifyEmail);
 
 module.exports = router;

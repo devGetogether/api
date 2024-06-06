@@ -1,24 +1,23 @@
 const User = require('../models/User');
-const Doctor = require('../models/Doctors');
 const asyncHandler = require('../middleware/async');
 const ErrorResponse = require('../utils/errorResponse');
 const sendEmail = require('../utils/sendEmail');
 const crypto = require('crypto');
+const { populateRoles } = require('../middleware/auth');
 
 // @desc     login User
 // @route    POST /v1/auth/login
 // @access   Public
-
 exports.login = asyncHandler(async (req, res, next) => {
-	const { idNumber, password } = req.body;
+	const { email, password } = req.body;
 
 	//   validate email and password
-	if (!idNumber || !password) {
-		return next(new ErrorResponse('Please provide an idNumber and password to log in', 400));
+	if (!email || !password) {
+		return next(new ErrorResponse('Please provide a valid email and password to log in', 400));
 	}
 
 	// Check for user
-	const user = await User.findOne({ idNumber }).select('+password');
+	const user = await User.findOne({ email }).select('+password');
 
 	if (!user) {
 		return next(new ErrorResponse('Invalid credentials', 401));
@@ -31,7 +30,7 @@ exports.login = asyncHandler(async (req, res, next) => {
 		return next(new ErrorResponse('Invalid credentials', 401));
 	}
 
-	sendTokenResponse(user, 200, res);
+	sendTokenResponse(user, 200, req, res);
 });
 
 // @desc    Update logged in user password
@@ -67,7 +66,7 @@ exports.updatePassword = asyncHandler(async (req, res, next) => {
 		console.log(err);
 	}
 
-	sendTokenResponse(user, 200, res);
+	sendTokenResponse(user, 200, req, res);
 });
 
 // @desc    Create Password Reset tokens
@@ -86,10 +85,10 @@ exports.forgotPassword = asyncHandler(async (req, res, next) => {
 	await user.save({ validateBeforeSave: false });
 
 	// Create reset url
-	const resetUrl = `${req.protocol}://${req.get('host')}/api/v1/auth/resetpassword/${resetToken}`.replace(' ', '');
-
-	// const message = `You are receiving this email because you (or someone else) has
-	// requested the reset of a password. Please make a PUT request to: \n\n ${resetUrl}`;
+	const resetUrl = `${req.protocol}://${req.get('host')}/auth/resetpassword/${resetToken}`.replace(
+		' ',
+		''
+	);
 
 	try {
 		await sendEmail({
@@ -114,10 +113,12 @@ exports.forgotPassword = asyncHandler(async (req, res, next) => {
 // @desc    Reset Password
 // @route   PUT /api/auth/resetpassword/:resettoken
 // access   Public
-
 exports.resetPassword = asyncHandler(async (req, res, next) => {
 	// Get hashed token
-	const resetPasswordToken = crypto.createHash('sha256').update(req.params.resettoken).digest('hex');
+	const resetPasswordToken = crypto
+		.createHash('sha256')
+		.update(req.params.resettoken)
+		.digest('hex');
 
 	const user = await User.findOne({
 		resetPasswordToken,
@@ -146,7 +147,7 @@ exports.resetPassword = asyncHandler(async (req, res, next) => {
 		console.log(err);
 	}
 
-	sendTokenResponse(user, 200, res);
+	sendTokenResponse(user, 200, req, res);
 });
 
 // @desc     Activate User
@@ -190,7 +191,8 @@ exports.activateUser = asyncHandler(async (req, res, next) => {
 // @route    PUT /v1/users/request-verification/:id/:type
 // @access   Private
 exports.requestVerification = asyncHandler(async (req, res, next) => {
-	const user = await User.findById(req.params.id);
+	user = await User.findById(req.params.id);
+
 	if (!user) {
 		return next(new errorResponse(`User not found with id ${req.params.id}`, 404));
 	}
@@ -227,14 +229,14 @@ exports.requestVerification = asyncHandler(async (req, res, next) => {
 				user_email: user.email,
 				user_name: user.firstName,
 				code: verificationCode,
-				expiresIn: '10 minutes',
+				expiresIn: verificationCodeExpiration,
 				subject: 'Verification Code!',
 				emailType: 'emailVerification',
 			});
 
 			// save verification code and expiry to the user
-			user.emailVerificationToken = verificationCode;
-			user.emailVerificationTokenExpires = verificationCodeExpiration;
+			user.verificationToken = verificationCode;
+			user.verificationTokenExpires = verificationCodeExpiration;
 			await user.save({ validateBeforeSave: false });
 
 			res.status(200).json({
@@ -293,24 +295,44 @@ exports.verifyContacts = asyncHandler(async (req, res, next) => {
 	res.status(200).json({ success: true, message: 'Contact Information Verified' });
 });
 
+// @desc     Get User
+// @route    GET auth/getMe
+// @access   Private
+exports.getMe = asyncHandler(async (req, res, next) => {
+	const user = await User.findById(req.user.id);
+
+	const { firstName, lastName, email, phoneNumber, _id, photo } = user;
+
+	req.user = user;
+
+	// other roles
+	await populateRoles(req, user._id);
+	console.log('Other Roles:'.yellow.bold);
+	console.log(req.vendor);
+
+	res
+		.status(200)
+		.json({
+			success: true,
+			user: {
+				firstName,
+				lastName,
+				email,
+				phoneNumber,
+				_id,
+				photo,
+				vendor: req.vendor,
+			},
+		});
+});
+
 // Get token from model, create cookie and send response
-const sendTokenResponse = async (user, statusCode, res) => {
+const sendTokenResponse = async (user, statusCode, req, res) => {
 	// destructure user
 
-	const { firstName, lastName, gender, email, address, phoneNumber, dateOfBirth, role, photo, _id } = user;
+	const { firstName, lastName, email, phoneNumber, _id, photo } = user;
 
 	const token = user.getSignedJwtToken();
-
-	// attach other IDs if user has other roles
-	let doctorId = null;
-	let doctor = {};
-
-	if (role.includes('doctor')) {
-		doctor = await Doctor.findOne({ details: _id }).select('_id photo qualifications specializations');
-		if (doctor) {
-			doctorId = doctor._id;
-		}
-	}
 
 	const options = {
 		expires: new Date(Date.now() + process.env.JWT_COOKIE_EXPIRE * 24 * 60 * 60 * 1000),
@@ -321,6 +343,22 @@ const sendTokenResponse = async (user, statusCode, res) => {
 		options.secure = true;
 	}
 
+	req.user = user;
+
+	// other roles
+	await populateRoles(req, user._id);
+	console.log('Other Roles:'.yellow.bold);
+	console.log(req.vendor);
+	// const roles = user.role;
+	// console.log(req);
+
+	// roles.forEach((role) => {
+	// 	if (role !== 'user') {
+	// 		console.log(role);
+	// 		otherRoles.push(req.vendor[role]);
+	// 	}
+	// });
+
 	res
 		.status(statusCode)
 		.cookie('token', token, options)
@@ -329,17 +367,12 @@ const sendTokenResponse = async (user, statusCode, res) => {
 			user: {
 				firstName,
 				lastName,
-				gender,
 				email,
-				dateOfBirth,
-				// address,
-				// phoneNumber,
+				phoneNumber,
 				_id,
-				doctorId,
-				role,
 				photo,
 				accessToken: token,
-				doctorProfile: doctor,
+				vendor: req.vendor,
 			},
 
 			token,

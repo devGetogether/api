@@ -13,6 +13,7 @@ const paymentSchema = new mongoose.Schema({
 		type: Date,
 		default: Date.now,
 	},
+	images: [String],
 	// Add more fields as needed
 });
 

@@ -1,0 +1,72 @@
+[
+	{
+		"firstName": "Michael",
+		"lastName": "Williams",
+		"email": "michael.williams@example.com",
+		"phoneNumber": "5552345678",
+		"password": "password"
+	},
+	{
+		"firstName": "Sarah",
+		"lastName": "Jones",
+		"email": "sarah.jones@example.com",
+		"phoneNumber": "5558765432",
+		"password": "password"
+	},
+	{
+		"firstName": "David",
+		"lastName": "Miller",
+		"email": "david.miller@example.com",
+		"phoneNumber": "5553456789",
+		"password": "password"
+	},
+	{
+		"firstName": "Laura",
+		"lastName": "Garcia",
+		"email": "laura.garcia@example.com",
+		"phoneNumber": "5559874321",
+		"password": "password"
+	},
+	{
+		"firstName": "James",
+		"lastName": "Martinez",
+		"email": "james.martinez@example.com",
+		"phoneNumber": "5555432109",
+		"password": "password"
+	},
+	{
+		"firstName": "John",
+		"lastName": "Doe",
+		"email": "john.doe@example.com",
+		"phoneNumber": "5551234567",
+		"password": "password"
+	},
+	{
+		"firstName": "Jane",
+		"lastName": "Smith",
+		"email": "jane.smith@example.com",
+		"phoneNumber": "5559876543",
+		"password": "password"
+	},
+	{
+		"firstName": "Alice",
+		"lastName": "Johnson",
+		"email": "alice.johnson@example.com",
+		"phoneNumber": "5556543210",
+		"password": "password"
+	},
+	{
+		"firstName": "Bob",
+		"lastName": "Brown",
+		"email": "bob.brown@example.com",
+		"phoneNumber": "5557891234",
+		"password": "password"
+	},
+	{
+		"firstName": "Emily",
+		"lastName": "Davis",
+		"email": "emily.davis@example.com",
+		"phoneNumber": "5553210987",
+		"password": "password"
+	}
+]

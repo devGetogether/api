@@ -9,20 +9,22 @@ const {
 	createNewCaterer,
 	updateCaterer,
 	deleteCaterer,
-} = require('../controllers/caterers');
+} = require('../controllers/caterer');
 
 const router = express.Router({ mergeParams: true });
 
 // Get all caterers
-router.route('/').get(protect, authorize('admin'), advancedResults(Caterers, '-password'), getAllCaterers);
+router
+	.route('/')
+	.get(protect,  advancedResults(Caterers, '-password'), getAllCaterers);
 
 // Create new caterer
-router.route('/register').post(createNewCaterer);
+router.route('/register').post(protect, createNewCaterer);
 
 router
-	.route('/:phoneNumber')
+	.route('/:id')
 	// Get caterer
-	.get(protect, getCaterer)
+	.get(getCaterer)
 	// Update caterer
 	.put(protect, updateCaterer)
 	// Delete caterer

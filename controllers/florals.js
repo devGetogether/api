@@ -1,11 +1,12 @@
 const asyncHandler = require('../middleware/async');
 const errorResponse = require('../utils/errorResponse');
-const Floral = require('../models/Floral');
+const Floral = require('../models/Florals');
+const User = require('../models/User');
 
 // @desc    Get all florals
 // @route   GET /api/florals
 // @access  Public
-exports.getFlorals = asyncHandler(async (req, res, next) => {
+exports.getAllFlorals = asyncHandler(async (req, res, next) => {
 	try {
 		const florals = await Floral.find();
 		res.status(200).json({ success: true, data: florals });
@@ -21,9 +22,11 @@ exports.getFloral = asyncHandler(async (req, res, next) => {
 	try {
 		const floral = await Floral.findById(req.params.id);
 		if (!floral) {
-			return next(new errorResponse(`Floral not found with id ${req.params.id}`, 404));
+			return next(new errorResponse(`Florals service provider not found`, 404));
 		}
-		res.status(200).json({ success: true, data: floral });
+		res
+			.status(200)
+			.json({ success: true, data: floral, message: 'Florals service provider found' });
 	} catch (err) {
 		next(err);
 	}
@@ -32,10 +35,28 @@ exports.getFloral = asyncHandler(async (req, res, next) => {
 // @desc    Create floral
 // @route   POST /api/florals
 // @access  Private
-exports.createFloral = asyncHandler(async (req, res, next) => {
+exports.createNewFloral = asyncHandler(async (req, res, next) => {
+	// check for published event planner
+	const publishedFloral = await Floral.findOne({ user: req.user.id });
+
+	// if there is a published event planner and the user is not an admin
+	if (publishedFloral) {
+		return res
+			.status(400)
+			.json({ success: false, message: 'User already has a Florals Service registered.' });
+	}
 	try {
 		const floral = await Floral.create(req.body);
-		res.status(201).json({ success: true, data: floral });
+
+		// add the floral role to the user roles array
+		const userRoles = [...req.user.role, 'floral'];
+
+		// update the user with the new role
+		await User.findByIdAndUpdate(req.user.id, { role: userRoles });
+
+		res
+			.status(201)
+			.json({ success: true, data: floral, message: 'Florals Service created successfully' });
 	} catch (err) {
 		next(err);
 	}

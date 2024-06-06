@@ -5,7 +5,7 @@ const Payment = require('../models/Payment');
 // @desc    Get all payments
 // @route   GET /api/payments
 // @access  Public
-exports.getPayments = asyncHandler(async (req, res, next) => {
+exports.getAllPayments = asyncHandler(async (req, res, next) => {
 	try {
 		const payments = await Payment.find();
 		res.status(200).json({ success: true, data: payments });
@@ -32,7 +32,7 @@ exports.getPayment = asyncHandler(async (req, res, next) => {
 // @desc    Create payment
 // @route   POST /api/payments
 // @access  Private
-exports.createPayment = asyncHandler(async (req, res, next) => {
+exports.createNewPayment = asyncHandler(async (req, res, next) => {
 	try {
 		const payment = await Payment.create(req.body);
 		res.status(201).json({ success: true, data: payment });

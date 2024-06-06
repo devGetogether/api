@@ -1,6 +1,5 @@
 const Appointments = require('../models/Appointments');
 const Users = require('../models/User');
-const Doctors = require('../models/Doctors');
 const ErrorResponse = require('../utils/errorResponse');
 const asyncHandler = require('../middleware/async');
 const { sendEmail } = require('../utils/sendEmail');

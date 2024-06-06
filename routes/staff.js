@@ -8,15 +8,15 @@ const { getAllStaff, getStaff, createNewStaff, updateStaff, deleteStaff } = requ
 const router = express.Router({ mergeParams: true });
 
 // Get all staff
-router.route('/').get(protect, authorize('admin'), advancedResults(Staff), getAllStaff);
+router.route('/').get(protect,  advancedResults(Staff), getAllStaff);
 
 // Create new staff
-router.route('/register').post(createNewStaff);
+router.route('/register').post(protect, createNewStaff);
 
 router
 	.route('/:id')
 	// Get staff
-	.get(protect, getStaff)
+	.get(getStaff)
 	// Update staff
 	.put(protect, updateStaff)
 	// Delete staff

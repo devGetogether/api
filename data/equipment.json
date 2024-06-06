@@ -1,0 +1,245 @@
+[
+	{
+		"servedAreas": [
+			"London",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea"
+		],
+		"userID": "6651e99932028b88bc4da144",
+		"name": "Premier Equipment Rentals",
+		"details": "We provide high-quality equipment for all events.",
+		"location": "Manchester",
+		"phoneNumber": "+447701234567",
+		"email": "premierequipment@example.com",
+		"services": [
+			{
+				"name": "Chairs",
+				"description": "We offer chairs",
+				"price": 50
+			},
+			{
+				"name": "Tables",
+				"description": "We offer tables",
+				"price": 100
+			},
+			{
+				"name": "Tents",
+				"description": "We offer tents",
+				"price": 200
+			},
+			{
+				"name": "Sound Systems",
+				"description": "We offer high-quality sound systems",
+				"price": 500
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Birmingham",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton"
+		],
+		"userID": "6651e99932028b88bc4da145",
+		"name": "Event Essentials",
+		"details": "Essential equipment for all your event needs.",
+		"location": "Birmingham",
+		"phoneNumber": "+447702345678",
+		"email": "eventessentials@example.com",
+		"services": [
+			{
+				"name": "Chairs",
+				"description": "We offer chairs",
+				"price": 45
+			},
+			{
+				"name": "Lighting",
+				"description": "Professional lighting equipment",
+				"price": 300
+			},
+			{
+				"name": "Stage",
+				"description": "Staging for events",
+				"price": 700
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Glasgow",
+			"Liverpool",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester"
+		],
+		"userID": "6651e99932028b88bc4da14b",
+		"name": "Ultimate Event Gear",
+		"details": "Your one-stop shop for event gear.",
+		"location": "Glasgow",
+		"phoneNumber": "+447703456789",
+		"email": "ultimategear@example.com",
+		"services": [
+			{
+				"name": "Chairs",
+				"description": "We offer chairs",
+				"price": 55
+			},
+			{
+				"name": "Tables",
+				"description": "We offer tables",
+				"price": 120
+			},
+			{
+				"name": "Projectors",
+				"description": "High-quality projectors for presentations",
+				"price": 250
+			},
+			{
+				"name": "Screens",
+				"description": "Projection screens",
+				"price": 150
+			},
+			{
+				"name": "Decor",
+				"description": "Decor items",
+				"price": 80
+			},
+			{
+				"name": "Sound Systems",
+				"description": "Sound systems for events",
+				"price": 600
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Bristol",
+			"Leeds",
+			"Nottingham",
+			"Cardiff",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea"
+		],
+		"userID": "6651e99932028b88bc4da148",
+		"name": "Elite Rentals",
+		"details": "Elite equipment rentals for exclusive events.",
+		"location": "London",
+		"phoneNumber": "+447704567890",
+		"email": "eliterentals@example.com",
+		"services": [
+			{
+				"name": "Chairs",
+				"description": "We offer chairs",
+				"price": 60
+			},
+			{
+				"name": "Tents",
+				"description": "High-quality tents",
+				"price": 250
+			},
+			{
+				"name": "Tables",
+				"description": "Durable tables",
+				"price": 110
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da14c",
+		"name": "Pro Event Equipment",
+		"details": "Professional equipment for all event types.",
+		"location": "Liverpool",
+		"phoneNumber": "+447705678901",
+		"email": "proeventequipment@example.com",
+		"services": [
+			{
+				"name": "Chairs",
+				"description": "We offer chairs",
+				"price": 50
+			},
+			{
+				"name": "Tables",
+				"description": "Tables of various sizes",
+				"price": 90
+			},
+			{
+				"name": "Audio Equipment",
+				"description": "Top-notch audio equipment",
+				"price": 500
+			},
+			{
+				"name": "Lighting",
+				"description": "Professional lighting setups",
+				"price": 300
+			},
+			{
+				"name": "Staging",
+				"description": "Stage equipment for events",
+				"price": 800
+			},
+			{
+				"name": "Tents",
+				"description": "Tents for outdoor events",
+				"price": 200
+			},
+			{
+				"name": "Heating Equipment",
+				"description": "Heating solutions for outdoor events",
+				"price": 150
+			},
+			{
+				"name": "Cooling Equipment",
+				"description": "Cooling solutions for events",
+				"price": 150
+			}
+		]
+	}
+]

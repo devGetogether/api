@@ -9,20 +9,25 @@ const {
 	createNewVideographer,
 	updateVideographer,
 	deleteVideographer,
-} = require('../controllers/videographers');
+} = require('../controllers/Videographer');
 
 const router = express.Router({ mergeParams: true });
 
 // Get all videographers
-router.route('/').get(protect, authorize('admin'), advancedResults(Videographers, '-password'), getAllVideographers);
+router.route('/').get(
+	protect,
+
+	advancedResults(Videographers, '-password'),
+	getAllVideographers
+);
 
 // Create new videographer
-router.route('/register').post(createNewVideographer);
+router.route('/register').post(protect, createNewVideographer);
 
 router
-	.route('/:phoneNumber')
+	.route('/:id')
 	// Get videographer
-	.get(protect, getVideographer)
+	.get( getVideographer)
 	// Update videographer
 	.put(protect, updateVideographer)
 	// Delete videographer

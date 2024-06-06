@@ -3,20 +3,20 @@ const Bars = require('../models/Bar');
 const advancedResults = require('../middleware/advancedResults');
 const { protect, authorize } = require('../middleware/auth');
 
-const { getAllBars, getBar, createNewBar, updateBar, deleteBar } = require('../controllers/bars');
+const { getAllBars, getBar, createBar, updateBar, deleteBar } = require('../controllers/bar');
 
 const router = express.Router({ mergeParams: true });
 
 // Get all bars
-router.route('/').get(protect, authorize('admin'), advancedResults(Bars, '-password'), getAllBars);
+router.route('/').get(protect,  advancedResults(Bars, '-password'), getAllBars);
 
 // Create new bar
-router.route('/register').post(createNewBar);
+router.route('/register').post(protect, createBar);
 
 router
 	.route('/:id')
 	// Get bar
-	.get(protect, getBar)
+	.get( getBar)
 	// Update bar
 	.put(protect, updateBar)
 	// Delete bar

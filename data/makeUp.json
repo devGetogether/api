@@ -1,0 +1,193 @@
+[
+	{
+		"servedAreas": [
+			"London",
+			"Manchester",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Cardiff",
+			"Belfast",
+			"Southampton"
+		],
+		"userID": "6651e99932028b88bc4da145",
+		"name": "Glamour Glow",
+		"details": "Specializing in bridal and event makeup.",
+		"location": "London",
+		"phoneNumber": "+447720299743",
+		"email": "glamourglow@example.com",
+		"services": [
+			{
+				"name": "Facials",
+				"description": "Deep cleansing and rejuvenating facials.",
+				"price": 50
+			},
+			{
+				"name": "Bridal Makeup",
+				"description": "Beautiful makeup for your special day.",
+				"price": 150
+			},
+			{
+				"name": "Party Makeup",
+				"description": "Glamorous looks for any party.",
+				"price": 80
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Birmingham",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Belfast",
+			"Leicester",
+			"Coventry",
+			"Swansea"
+		],
+		"userID": "6651e99932028b88bc4da148",
+		"name": "Radiant Beauty",
+		"details": "Enhancing natural beauty with professional makeup services.",
+		"location": "Birmingham",
+		"phoneNumber": "+447720299744",
+		"email": "radiantbeauty@example.com",
+		"services": [
+			{
+				"name": "Facials",
+				"description": "Relaxing and revitalizing facials.",
+				"price": 40
+			},
+			{
+				"name": "Makeup Tutorials",
+				"description": "Learn to do your own makeup like a pro.",
+				"price": 100
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham"
+		],
+		"userID": "6651e99932028b88bc4da149",
+		"name": "Elegant Touch",
+		"details": "Providing makeup services for all occasions.",
+		"location": "Manchester",
+		"phoneNumber": "+447720299745",
+		"email": "eleganttouch@example.com",
+		"services": [
+			{
+				"name": "Facials",
+				"description": "Custom facials for glowing skin.",
+				"price": 35
+			},
+			{
+				"name": "Evening Makeup",
+				"description": "Stunning looks for evening events.",
+				"price": 90
+			},
+			{
+				"name": "Photo Shoot Makeup",
+				"description": "Makeup for photo sessions.",
+				"price": 120
+			},
+			{
+				"name": "Makeup Classes",
+				"description": "Group and individual makeup classes.",
+				"price": 150
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da14b",
+		"name": "MakeUp Magic",
+		"details": "Magic touch for all your makeup needs.",
+		"location": "London",
+		"phoneNumber": "+447720299746",
+		"email": "makeupmagic@example.com",
+		"services": [
+			{
+				"name": "Facials",
+				"description": "Relaxing and skin-enhancing facials.",
+				"price": 45
+			},
+			{
+				"name": "Bridal Makeup",
+				"description": "Beautiful and lasting bridal makeup.",
+				"price": 160
+			},
+			{
+				"name": "Special Effects Makeup",
+				"description": "Unique makeup for themed events.",
+				"price": 200
+			},
+			{
+				"name": "Daily Makeup",
+				"description": "Perfect makeup for your daily needs.",
+				"price": 60
+			},
+			{
+				"name": "Teen Makeup",
+				"description": "Fun and age-appropriate makeup for teens.",
+				"price": 50
+			}
+		]
+	},
+	{
+		"servedAreas": ["Leicester", "Cardiff", "Belfast", "Southampton", "Coventry"],
+		"userID": "6651e99932028b88bc4da14d",
+		"name": "Chic Makeup",
+		"details": "Chic and trendy makeup services.",
+		"location": "Leicester",
+		"phoneNumber": "+447720299747",
+		"email": "chicmakeup@example.com",
+		"services": [
+			{
+				"name": "Facials",
+				"description": "Customized facials for all skin types.",
+				"price": 40
+			},
+			{
+				"name": "Makeup Consultations",
+				"description": "Personalized makeup consultations.",
+				"price": 70
+			},
+			{
+				"name": "Wedding Makeup",
+				"description": "Elegant makeup for weddings.",
+				"price": 140
+			}
+		]
+	}
+]

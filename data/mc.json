@@ -1,0 +1,221 @@
+[
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds"
+		],
+		"userID": "6651e99932028b88bc4da145",
+		"name": "MC Entertainer",
+		"details": "Experienced MC for all events",
+		"location": "Liverpool",
+		"phoneNumber": "+447701234567",
+		"email": "mcentertainer@example.com",
+		"services": [
+			{
+				"name": "Open Mic",
+				"description": "Comedy",
+				"price": 15
+			},
+			{
+				"name": "Wedding Host",
+				"description": "Engaging wedding hosting",
+				"price": 100
+			},
+			{
+				"name": "Corporate Events",
+				"description": "Professional corporate event hosting",
+				"price": 200
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Glasgow",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Cardiff",
+			"Belfast",
+			"Southampton"
+		],
+		"userID": "6651e99932028b88bc4da149",
+		"name": "Fun MC",
+		"details": "Fun and engaging MC",
+		"location": "Glasgow",
+		"phoneNumber": "+447702345678",
+		"email": "funmc@example.com",
+		"services": [
+			{
+				"name": "Open Mic",
+				"description": "Comedy",
+				"price": 20
+			},
+			{
+				"name": "Birthday Parties",
+				"description": "Exciting birthday party hosting",
+				"price": 50
+			},
+			{
+				"name": "Talent Shows",
+				"description": "Hosting for talent shows",
+				"price": 75
+			},
+			{
+				"name": "Charity Events",
+				"description": "Engaging charity event hosting",
+				"price": 60
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Cardiff",
+			"Aberdeen",
+			"Coventry"
+		],
+		"userID": "6651e99932028b88bc4da14a",
+		"name": "Professional MC",
+		"details": "Professional MC for corporate and formal events",
+		"location": "Birmingham",
+		"phoneNumber": "+447703456789",
+		"email": "promc@example.com",
+		"services": [
+			{
+				"name": "Open Mic",
+				"description": "Comedy",
+				"price": 25
+			},
+			{
+				"name": "Corporate Events",
+				"description": "Professional event hosting",
+				"price": 150
+			},
+			{
+				"name": "Award Ceremonies",
+				"description": "Hosting award ceremonies",
+				"price": 120
+			},
+			{
+				"name": "Panel Discussions",
+				"description": "Moderating panel discussions",
+				"price": 80
+			},
+			{
+				"name": "Workshops",
+				"description": "MC for workshops and seminars",
+				"price": 60
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"Manchester",
+			"Glasgow",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen"
+		],
+		"userID": "6651e99932028b88bc4da14c",
+		"name": "Versatile MC",
+		"details": "Versatile MC for all kinds of events",
+		"location": "Manchester",
+		"phoneNumber": "+447704567890",
+		"email": "versatilemc@example.com",
+		"services": [
+			{
+				"name": "Open Mic",
+				"description": "Comedy",
+				"price": 18
+			},
+			{
+				"name": "Concerts",
+				"description": "MC for concerts",
+				"price": 90
+			},
+			{
+				"name": "Festivals",
+				"description": "Hosting large festivals",
+				"price": 200
+			},
+			{
+				"name": "Community Events",
+				"description": "Engaging community events",
+				"price": 70
+			},
+			{
+				"name": "Radio Shows",
+				"description": "Hosting radio shows",
+				"price": 50
+			},
+			{
+				"name": "TV Shows",
+				"description": "MC for TV shows",
+				"price": 120
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "664dfd7a59989caab8e1b798",
+		"name": "Ultimate MC",
+		"details": "The ultimate MC experience",
+		"location": "London",
+		"phoneNumber": "+447720299742",
+		"email": "ultimatemc@example.com",
+		"services": [
+			{
+				"name": "Open Mic",
+				"description": "Comedy",
+				"price": 30
+			},
+			{
+				"name": "Gala Events",
+				"description": "Hosting gala events",
+				"price": 200
+			},
+			{
+				"name": "Fundraisers",
+				"description": "Engaging fundraiser events",
+				"price": 150
+			}
+		]
+	}
+]

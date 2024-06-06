@@ -1,0 +1,113 @@
+[
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da145",
+		"name": "AV Solutions",
+		"details": "We provide high-quality AV solutions.",
+		"location": "Birmingham",
+		"phoneNumber": "+447770123456",
+		"email": "avsolutions@example.com",
+		"services": [
+			{
+				"name": "Screens",
+				"description": "Ours Are great"
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent"
+		],
+		"userID": "6651e99932028b88bc4da147",
+		"name": "Pro AV Services",
+		"details": "Professional AV services for all events.",
+		"location": "Manchester",
+		"phoneNumber": "+447780234567",
+		"email": "proavservices@example.com",
+		"services": [
+			{
+				"name": "Projectors",
+				"description": "High-resolution projectors for any occasion."
+			}
+		]
+	},
+	{
+		"servedAreas": ["London", "Birmingham", "Manchester", "Glasgow", "Stoke-on-Trent"],
+		"userID": "6651e99932028b88bc4da14b",
+		"name": "AV Experts",
+		"details": "Experts in audio-visual services.",
+		"location": "Glasgow",
+		"phoneNumber": "+447790345678",
+		"email": "avexperts@example.com",
+		"services": [
+			{
+				"name": "Audio Systems",
+				"description": "Top-notch audio systems for events."
+			}
+		]
+	},
+	{
+		"servedAreas": ["London", "Leeds", "Sheffield", "Aberdeen", "Reading", "Stoke-on-Trent"],
+		"userID": "6651e99932028b88bc4da149",
+		"name": "AV Innovations",
+		"details": "Innovative AV solutions for modern events.",
+		"location": "Edinburgh",
+		"phoneNumber": "+447700456789",
+		"email": "avinnovations@example.com",
+		"services": [
+			{
+				"name": "Lighting",
+				"description": "Advanced lighting systems for events."
+			}
+		]
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+
+			"Leeds",
+			"Cardiff",
+			"Belfast",
+			"Southampton"
+		],
+		"userID": "6651e99932028b88bc4da14d",
+		"name": "Premier AV",
+		"details": "Premier AV services for top-tier events.",
+		"location": "Liverpool",
+		"phoneNumber": "+447710567890",
+		"email": "premierav@example.com",
+		"services": [
+			{
+				"name": "Video Conferencing",
+				"description": "State-of-the-art video conferencing solutions."
+			}
+		]
+	}
+]

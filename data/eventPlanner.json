@@ -1,0 +1,188 @@
+[
+	{
+		"servedAreas": [
+			"London",
+			"Birmingham",
+			"Manchester",
+			"Glasgow",
+			"Liverpool",
+			"Edinburgh",
+			"Bristol"
+		],
+		"userID": "6651e99932028b88bc4da145",
+		"name": "Elegant Events",
+		"details": "Specializing in elegant event planning.",
+		"location": "London",
+		"phoneNumber": "+447701234567",
+		"email": "elegantevents@example.com",
+		"cpp": 25,
+		"services": [
+			{
+				"name": "Long Distance",
+				"description": "Planning events across multiple locations."
+			},
+			{
+				"name": "Corporate Events",
+				"description": "Organizing professional corporate events."
+			},
+			{
+				"name": "Weddings",
+				"description": "Expert wedding planning services."
+			}
+		],
+		"maxCapacity": 1000,
+		"minCapacity": 300
+	},
+	{
+		"servedAreas": [
+			"Liverpool",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Cardiff",
+			"Belfast",
+			"Southampton"
+		],
+		"userID": "6651e99932028b88bc4da146",
+		"name": "Global Event Planners",
+		"details": "We plan events worldwide.",
+		"location": "Liverpool",
+		"phoneNumber": "+447702345678",
+		"email": "globalevents@example.com",
+		"cpp": 30,
+		"services": [
+			{
+				"name": "Long Distance",
+				"description": "Planning events in distant locations."
+			},
+			{
+				"name": "Private Parties",
+				"description": "Exclusive planning for private parties."
+			},
+			{
+				"name": "Product Launches",
+				"description": "Organizing high-profile product launches."
+			},
+			{
+				"name": "Festivals",
+				"description": "Managing large-scale festivals."
+			}
+		],
+		"maxCapacity": 2000,
+		"minCapacity": 500
+	},
+	{
+		"servedAreas": [
+			"Cardiff",
+			"Belfast",
+			"Southampton",
+			"Aberdeen",
+			"Coventry",
+			"Swansea",
+			"Reading",
+			"Stoke-on-Trent",
+			"Glasgow"
+		],
+		"userID": "6651e99932028b88bc4da147",
+		"name": "Festive Planners",
+		"details": "Creating unforgettable festive events.",
+		"location": "Cardiff",
+		"phoneNumber": "+447703456789",
+		"email": "festiveplanners@example.com",
+		"cpp": 40,
+		"services": [
+			{
+				"name": "Long Distance",
+				"description": "Comprehensive event planning services."
+			},
+			{
+				"name": "Birthday Parties",
+				"description": "Planning memorable birthday parties."
+			}
+		],
+		"maxCapacity": 1500,
+		"minCapacity": 400
+	},
+	{
+		"servedAreas": [
+			"London",
+			"Manchester",
+			"Edinburgh",
+			"Bristol",
+			"Leeds",
+			"Sheffield",
+			"Newcastle",
+			"Nottingham",
+			"Leicester",
+			"Swansea"
+		],
+		"userID": "6651e99932028b88bc4da148",
+		"name": "Luxury Planners",
+		"details": "Top-tier luxury event planning.",
+		"location": "Manchester",
+		"phoneNumber": "+447704567890",
+		"email": "luxuryplanners@example.com",
+		"cpp": 50,
+		"services": [
+			{
+				"name": "Long Distance",
+				"description": "High-end event planning across locations."
+			},
+			{
+				"name": "Luxury Weddings",
+				"description": "Planning exquisite luxury weddings."
+			},
+			{
+				"name": "Gala Dinners",
+				"description": "Organizing high-profile gala dinners."
+			},
+			{
+				"name": "Charity Events",
+				"description": "Planning prestigious charity events."
+			},
+			{
+				"name": "Conferences",
+				"description": "Managing large-scale conferences."
+			}
+		],
+		"maxCapacity": 3000,
+		"minCapacity": 600
+	},
+	{
+		"servedAreas": ["Birmingham", "Liverpool", "Edinburgh", "Reading", "Stoke-on-Trent"],
+		"userID": "6651e99932028b88bc4da149",
+		"name": "All Event Planners",
+		"details": "Versatile event planning for any occasion.",
+		"location": "Birmingham",
+		"phoneNumber": "+447705678901",
+		"email": "alleventplanners@example.com",
+		"cpp": 35,
+		"services": [
+			{
+				"name": "Long Distance",
+				"description": "Versatile event planning for any occasion."
+			},
+			{
+				"name": "Corporate Meetings",
+				"description": "Professional planning for corporate meetings."
+			},
+			{
+				"name": "Workshops",
+				"description": "Organizing educational workshops."
+			},
+			{
+				"name": "Community Events",
+				"description": "Planning local community events."
+			},
+			{
+				"name": "Trade Shows",
+				"description": "Managing trade show events."
+			}
+		],
+		"maxCapacity": 1800,
+		"minCapacity": 450
+	}
+]

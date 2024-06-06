@@ -1,33 +1,33 @@
 const express = require('express');
-const TransportProviders = require('../models/TransportProvider');
+const Transports = require('../models/Transport');
 const advancedResults = require('../middleware/advancedResults');
 const { protect, authorize } = require('../middleware/auth');
 
 const {
-	getAllTransportProviders,
-	getTransportProvider,
-	createNewTransportProvider,
-	updateTransportProvider,
-	deleteTransportProvider,
-} = require('../controllers/transportProviders');
+	getAllTransports,
+	getTransport,
+	createNewTransport,
+	updateTransport,
+	deleteTransport,
+} = require('../controllers/transport');
 
 const router = express.Router({ mergeParams: true });
 
-// Get all transport providers
+// Get all transport s
 router
 	.route('/')
-	.get(protect, authorize('admin'), advancedResults(TransportProviders, '-password'), getAllTransportProviders);
+	.get(protect,  advancedResults(Transports, '-password'), getAllTransports);
 
-// Create new transport provider
-router.route('/register').post(createNewTransportProvider);
+// Create new transport
+router.route('/register').post(protect, createNewTransport);
 
 router
-	.route('/:phoneNumber')
-	// Get transport provider
-	.get(protect, getTransportProvider)
-	// Update transport provider
-	.put(protect, updateTransportProvider)
-	// Delete transport provider
-	.delete(protect, authorize('admin'), deleteTransportProvider);
+	.route('/:id')
+	// Get transport
+	.get(getTransport)
+	// Update transport
+	.put(protect, updateTransport)
+	// Delete transport
+	.delete(protect, authorize('admin'), deleteTransport);
 
 module.exports = router;

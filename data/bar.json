@@ -1,0 +1,120 @@
+[
+	{
+		"servedAreas": ["London", "Birmingham", "Southampton"],
+		"userID": "6651e99932028b88bc4da146",
+		"name": "Premier Bar Services",
+		"details": "We provide top-notch bar services for all events.",
+		"location": "London",
+		"phoneNumber": "+447701234567",
+		"email": "premierbar@example.com",
+		"cpp": 12,
+		"services": [
+			{
+				"name": "Mocktails",
+				"description": "We create the world's best mocktails."
+			},
+			{
+				"name": "Cocktails",
+				"description": "We design cocktails according to the user's desires and we have our own signature cocktails."
+			}
+		],
+		"maxCapacity": 600,
+		"minCapacity": 50
+	},
+	{
+		"servedAreas": ["London", "Birmingham", "Southampton"],
+		"userID": "6651e99932028b88bc4da149",
+		"name": "Luxury Bar Co.",
+		"details": "Luxury bar services tailored to your event.",
+		"location": "Birmingham",
+		"phoneNumber": "+447702345678",
+		"email": "luxurybar@example.com",
+		"cpp": 15,
+		"services": [
+			{
+				"name": "Mocktails",
+				"description": "We create the world's best mocktails."
+			},
+			{
+				"name": "Cocktails",
+				"description": "We design cocktails according to the user's desires and we have our own signature cocktails."
+			},
+			{
+				"name": "Wine Service",
+				"description": "We offer an extensive selection of fine wines."
+			}
+		],
+		"maxCapacity": 400,
+		"minCapacity": 80
+	},
+	{
+		"servedAreas": ["London", "Birmingham", "Southampton"],
+		"userID": "6651e99932028b88bc4da14c",
+		"name": "Elite Bar Service",
+		"details": "Elite bar services for premium events.",
+		"location": "Southampton",
+		"phoneNumber": "+447703456789",
+		"email": "elitebar@example.com",
+		"cpp": 18,
+		"services": [
+			{
+				"name": "Mocktails",
+				"description": "We create the world's best mocktails."
+			}
+		],
+		"maxCapacity": 300,
+		"minCapacity": 60
+	},
+	{
+		"servedAreas": ["London", "Birmingham", "Southampton"],
+		"userID": "6651e99932028b88bc4da147",
+		"name": "Party Bar Experts",
+		"details": "Expert bar services for any party.",
+		"location": "London",
+		"phoneNumber": "+447704567890",
+		"email": "partybar@example.com",
+		"cpp": 20,
+		"services": [
+			{
+				"name": "Mocktails",
+				"description": "We create the world's best mocktails."
+			},
+			{
+				"name": "Cocktails",
+				"description": "We design cocktails according to the user's desires and we have our own signature cocktails."
+			}
+		],
+		"maxCapacity": 700,
+		"minCapacity": 150
+	},
+	{
+		"servedAreas": ["London", "Birmingham", "Southampton"],
+		"userID": "664dfd7a59989caab8e1b798",
+		"name": "Event Bar Specialists",
+		"details": "Specialized bar services for all events.",
+		"location": "London",
+		"phoneNumber": "+447705678901",
+		"email": "eventbar@example.com",
+		"cpp": 10,
+		"services": [
+			{
+				"name": "Mocktails",
+				"description": "We create the world's best mocktails."
+			},
+			{
+				"name": "Cocktails",
+				"description": "We design cocktails according to the user's desires and we have our own signature cocktails."
+			},
+			{
+				"name": "Beer Service",
+				"description": "Wide selection of local and international beers."
+			},
+			{
+				"name": "Spirits",
+				"description": "Top-shelf spirits for any event."
+			}
+		],
+		"maxCapacity": 500,
+		"minCapacity": 100
+	}
+]
